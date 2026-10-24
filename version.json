@@ -1,8 +1,8 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "name": "The Hangar",
   "releaseDate": "2026-10-24",
-  "releaseNotes": "الإصدار 1.1.1 — إضافة حزمة تطبيقات ArtCraft الـ 13 المبنية بلغة Rust، وتدشين مسار جديد كلياً للأدوات المكتبية والدراسية مع خارطة طريق خاصة بالأبحاث والمذاكرة.",
-  "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe",
+  "releaseNotes": "الإصدار 1.1.2 — نافذة تحديث ملكية خاصة ومدمجة مع هوية الهنجر الداكنة والذهبية، معالجة كاملة لترميز النصوص العربية، شريط تقدم حي ومباشر للتنزيل بالميجابايت، وتسليم تلقائي دقيق للمثبت في مسار التثبيت الفعلي.",
+  "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe",
   "mandatory": false
 }

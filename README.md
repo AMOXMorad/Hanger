@@ -3,15 +3,15 @@
 # 🧰 الهنجر — The Hangar
 ### ورشتك الرقمية، من الفكرة للإنجاز
 
-[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.1-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
-[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.5MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
-[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
+[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.2-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/v1.1.2)
+[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.6MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe)
+[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe)
 [![الترخيص](https://img.shields.io/badge/License-Apache--2.0-475569?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
 
 <br/>
 
-<a href="https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe">
-  <img src="https://img.shields.io/badge/⚡_اضغط_هنا_لتحميل_الهنجر_مباشرة-The__Hangar__Setup.exe_(1.5MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="تحميل الهنجر لويندوز" height="42" />
+<a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe">
+  <img src="https://img.shields.io/badge/⚡_اضغط_هنا_لتحميل_الهنجر_مباشرة-The__Hangar__Setup.exe_(1.6MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="تحميل الهنجر لويندوز" height="42" />
 </a>
 
 <br/><br/>
@@ -29,13 +29,30 @@
 
 | الملف والنسخة | الرابط المباشر | الحجم | نظام التشغيل |
 | :--- | :--- | :--- | :--- |
-| **The Hangar Setup (v1.1.1)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) | `~1.5 MB` | Windows 10 / 11 (64-bit) |
+| **The Hangar Setup (v1.1.2)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe) | `~1.6 MB` | Windows 10 / 11 (64-bit) |
 
 > 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
 ---
 
-## 🚀 الجديد في الإصدار 1.1.1 (What's New in v1.1.1)
+## 🚀 الجديد في الإصدار 1.1.2 (What's New in v1.1.2)
+
+1. 🎨 **نافذة تحديث ملكية خاصة بهوية الهنجر (Custom Branded Update Modal):**
+   - استبدال رسائل ويندوز الافتراضية بنافذة داكنة وذهبية أنيقة مصممة خصيصاً مع ظل حقيقي (`CS_DROPSHADOW`).
+   - إمكانية سحب النافذة بسلاسة وأزرار تفاعلية فخمة (`تحديث وتثبيت الآن 🚀` و`تذكيري لاحقاً`).
+
+2. 🔤 **حل مشكلة ترميز اللغة العربية بالكامل (UTF-8 Arabic Decoded):**
+   - معالجة ترميز النصوص العربية السحابية لتعمل دون أي تشفير خاطئ وبخط عربي نظيف تماماً.
+
+3. 📊 **شريط تقدم حي ومباشر للتنزيل (Live Progress Tracker):**
+   - شريط تقدم ذهبي انسيابي يعرض نسبة التنزيل وحجم الملف المنقول بدقة حتى 100%.
+
+4. 🔄 **تسليم ذكي لمسار التثبيت الفعلي (Smart Target Path Handover):**
+   - تمرير مسار مجلد البرنامج الحالي للمثبت لضمان الاستبدال الفوري للنسخة دون تعليق أو تكرار.
+
+---
+
+## 🌟 إضافات الإصدار 1.1.1 السابقة:
 
 1. 🦀 **إضافة حزمة برامج ArtCraft الـ 13 المكتوبة بلغة Rust:**
    * تم تضمين وتوزيع جميع برامج [ArtCraft](https://getartcraft.com/apps) الإبداعية والمكتبية مفتوحة المصدر بالكامل في تخصصاتها المناسبة:
