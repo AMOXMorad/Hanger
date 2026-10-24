@@ -1,12 +1,25 @@
-# 🧰 الهنجر — The Hangar (Digital Workshop)
+<div align="center">
 
-[![GitHub Release](https://img.shields.io/badge/Release-v1.1.0-emerald-400?style=for-the-badge&logo=github)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
-[![Download for Windows](https://img.shields.io/badge/Download-The_Hangar_Setup.exe_(1.5MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue?style=for-the-badge&logo=windows)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge)](./LICENSE)
+# 🧰 الهنجر — The Hangar
+### ورشتك الرقمية، من الفكرة للإنجاز
+
+[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.0-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
+[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.5MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
+[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
+[![الترخيص](https://img.shields.io/badge/License-Apache--2.0-475569?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+
+<br/>
+
+<a href="https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe">
+  <img src="https://img.shields.io/badge/⚡_اضغط_هنا_لتحميل_الهنجر_مباشرة-The__Hangar__Setup.exe_(1.5MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="تحميل الهنجر لويندوز" height="42" />
+</a>
+
+<br/><br/>
 
 > **ورشتك الرقمية، من الفكرة للإنجاز.**  
 > دليل ومجمع أدوات المطورين وصناع المحتوى: أدوات الويب، التصميم والموكابس، الذكاء الاصطناعي، والمونتاج والصوتيات مع مثبت ويندوز فائق الخفة، وتفريعات تصنيفية ذكية، ونظام مسارات عمل ديناميكية قابلة للتخصيص والتثبيت.
+
+</div>
 
 ---
 
@@ -14,9 +27,9 @@
 
 يمكنك تحميل برنامج الهنجر وتثبيته على جهاز الكمبيوتر بضغطة زر واحدة:
 
-| الملف | رابط التحميل المباشر | الحجم | التوافق |
+| الملف والنسخة | الرابط المباشر | الحجم | نظام التشغيل |
 | :--- | :--- | :--- | :--- |
-| **مثبت الهنجر الرسمي (v1.1.0)** | 🚀 **[تحميل The_Hangar_Setup.exe](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)** | ~1.5 MB | Windows 10 / 11 (64-bit) |
+| **The Hangar Setup (v1.1.0)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) | `~1.5 MB` | Windows 10 / 11 (64-bit) |
 
 > 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
