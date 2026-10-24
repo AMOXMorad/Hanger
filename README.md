@@ -3,7 +3,7 @@
 # 🧰 الهنجر — The Hangar
 ### ورشتك الرقمية، من الفكرة للإنجاز
 
-[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.0-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
+[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.1-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
 [![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.5MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
 [![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
 [![الترخيص](https://img.shields.io/badge/License-Apache--2.0-475569?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
@@ -17,7 +17,7 @@
 <br/><br/>
 
 > **ورشتك الرقمية، من الفكرة للإنجاز.**  
-> دليل ومجمع أدوات المطورين وصناع المحتوى: أدوات الويب، التصميم والموكابس، الذكاء الاصطناعي، والمونتاج والصوتيات مع مثبت ويندوز فائق الخفة، وتفريعات تصنيفية ذكية، ونظام مسارات عمل ديناميكية قابلة للتخصيص والتثبيت.
+> المنصة والمجمّع الأضخم لأدوات المطورين، المصممين، الباحثين، وصناع المحتوى: أكثر من 68 أداة وبرنامج مكتبي مقسمة على 5 مسارات تخصصية، مع حزمة برامج ArtCraft الـ 13 المبنية بلغة Rust، ومسار متكامل للأدوات المكتبية والدراسية، ومثبت ويندوز فائق الخفة (~1.5MB) ونظام مسارات عمل تفاعلية ديناميكية.
 
 </div>
 
@@ -29,29 +29,50 @@
 
 | الملف والنسخة | الرابط المباشر | الحجم | نظام التشغيل |
 | :--- | :--- | :--- | :--- |
-| **The Hangar Setup (v1.1.0)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) | `~1.5 MB` | Windows 10 / 11 (64-bit) |
+| **The Hangar Setup (v1.1.1)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) | `~1.5 MB` | Windows 10 / 11 (64-bit) |
 
 > 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
 ---
 
-## 🚀 الجديد في الإصدار 1.1.0 (What's New in v1.1.0)
+## 🚀 الجديد في الإصدار 1.1.1 (What's New in v1.1.1)
 
-1. 📌 **تثبيت وتخصيص أدوات المسار (Dynamic Step Pinning):**
-   * إمكانية تخصيص أي خطوة في مسارات العمل السريعة وتثبيت أداتك المفضلة (مثلاً استبدال `v0.dev` بـ `Bolt.new` أو `Cursor AI` في الخطوة الأولى).
-   * إمكانية تثبيت أي أداة مباشرة من "جدار العِدد" في أي مسار تريده.
-   * نافذة تفاعلية سهلة لاختيار وتثبيت أو استعادة الأداة الافتراضية للخطوة بضغطة زر.
-   * حفظ التفضيلات تلقائياً في الذاكرة المحلية (`localStorage`) لتبقى محفوظة عند إعادة فتح البرنامج.
-2. 🗂️ **تفريعات التصنيفات الذكية (Sub-Categories Taxonomy):**
-   * شريط فرعي ذكي داخل كل مسار لعرض الأدوات حسب النوع الدقيق مع عدّاد فوري لكل تصنيف فرعي:
-     - **مسار الويب:** `Blocks` (مكونات وبلوكات)، `Templates` (قوالب جاهزة)، `AI Builders` (برمجة وتطوير ذكي)، `Elements & 3D` (عناصر وخلفيات و3D).
-     - **مسار الصور:** `Mockup` (موكابس وإطارات أجهزة)، `Elements` (عناصر وتفريغ PNG)، `AI Gen` (توليد ذكي)، `Studio & Edit` (استوديو وتكبير جودة 8K).
-     - **مسار الفيديو:** `Stock & B-Roll` (خامات 4K مجانية)، `AI Video` (توليد سينمائي)، `Editing & VFX` (مونتاج وكابشنز)، `Templates` (قوالب موشن جاهزة).
-     - **مسار الصوت:** `Voice AI` (أصوات بشرية وتوليد)، `Music` (موسيقى تصويرية)، `SFX` (مؤثرات صوتية حرة)، `Enhancement` (تنقية وهندسة صوت AI).
-3. 🖥️ **دعم الاختصارات الأصلية في ويندوز (Native IShellLinkW):**
-   * حل مشكلة ترميز الحروف العربية في ويندوز؛ المثبت ينشئ الآن اختصارات رسمية متوافقة مع Unicode باسم **"الهنجر"** و **"The Hangar"** على الديسك توب وفي قائمة Start مع أيقونة الورشة الذهبية الأصلية ومجلد خاص به برنامج إلغاء التثبيت النظيف (`Uninstall.exe`).
-4. 🔒 **تحديث بروتوكول التحديث التلقائي:**
-   * تفعيل تشفير `TLS 1.2` رسمياً لضمان اتصال آمن وسلس مع خوادم GitHub للتحقق من التحديثات وتنزيلها تلقائياً.
+1. 🦀 **إضافة حزمة برامج ArtCraft الـ 13 المكتوبة بلغة Rust:**
+   * تم تضمين وتوزيع جميع برامج [ArtCraft](https://getartcraft.com/apps) الإبداعية والمكتبية مفتوحة المصدر بالكامل في تخصصاتها المناسبة:
+     - **PhotoCraft:** بديل Photoshop لمعالجة الصور والطبقات وقراءة ملفات PSD/PSB.
+     - **VectorCraft:** بديل Illustrator لرسم الفيكتور ومسارات الـ Pen وتصدير SVG/PDF.
+     - **LightCraft:** بديل Lightroom لتحميض وتعديل صور RAW والألوان باحترافية.
+     - **DesignCraft:** بديل InDesign لتنسيق المجلات والبروشورات المطبوعة والرقمية.
+     - **FilmCraft:** بديل Premiere لمونتاج وتعديل الفيديو بتايم لاين متعدد المسارات.
+     - **EffectCraft:** بديل After Effects للموشن جرافيك والمؤثرات البصرية وكي فريمز.
+     - **SoundCraft:** بديل Audition لتسجيل وهندسة الصوتيات الرقمية (DAW).
+     - **FigCraft:** بديل Figma المكتبي لتصميم واجهات التطبيقات (UI/UX) والبروتوتايبينج.
+     - **CadCraft:** بديل AutoCAD للتصميم الهندسي والمعماري 2D/3D ومخططات DXF.
+     - **PdfCraft:** بديل Acrobat Pro لتعديل ودمج وتوقيع مستندات PDF مجاناً.
+     - **WordCraft:** بديل Microsoft Word لمعالجة النصوص وكتابة الأبحاث بخفة وسرعة.
+     - **DeckCraft:** بديل PowerPoint لإنشاء عروض تقديمية (Slides) وسلايدات جذابة.
+     - **GridCraft:** بديل Excel لجداول البيانات السريعة والمعادلات الرياضية.
+     - **ArtCraft Launcher:** المشغل المكتبي الرسمي لإدارة وتحديث كافة برامج الحزمة.
+
+2. 📚 **تدشين المسار الخامس: أدوات مكتبية ودراسية (Office & Study):**
+   * مسار مخصص لطلاب الجامعات، الباحثين الأكاديميين، وصناع المعرفة يضم:
+     - `تدوين ومستندات`: **Notion**, **Obsidian**, **WordCraft**, **Overleaf (LaTeX)**.
+     - `تحرير PDF وملفات`: **PdfCraft**, **iLovePDF**.
+     - `بحث ومذاكرة`: **Anki** (تكرار متباعد), **Zotero** (إدارة المراجع), **DeepL** (ترجمة أكاديمية), **QuillBot** (صياغة وقواعد).
+     - `عروض وجداول`: **DeckCraft**, **GridCraft**, **Gamma App** (عروض AI), **Excalidraw** (سبورة ومخططات).
+
+3. 🎓 **خارطة طريق سريعة جديدة للأبحاث والمذاكرة (Study & Research Roadmap):**
+   * مسار إرشادي عملي من 4 خطوات:
+     - **01. اجمع مراجعك:** عبر `Zotero` أو `Notion` أو `Obsidian`.
+     - **02. لخص وترجم:** عبر `DeepL Translate` أو `QuillBot` أو `Anki`.
+     - **03. اكتب البحث:** عبر `WordCraft` أو `Overleaf (LaTeX)`.
+     - **04. جهّز العرض:** عبر `DeckCraft` أو `Gamma App` أو `Excalidraw`.
+
+4. 📌 **استمرار كافة مزايا v1.1.0:**
+   * تثبيت الأدوات ديناميكياً (Pinning) في أي خطوة.
+   * تفريعات التصنيفات مع عدادات الأدوات الحية.
+   * الاختصارات الأصلية لويندوز بدون أي مشاكل ترميز.
+   * التحديث التلقائي الصامت عبر اتصال TLS 1.2 المشفر.
 
 ---
 
@@ -59,59 +80,69 @@
 
 | المسار الأساسي | التفريع الفرعي | الغرض الأساسي | أبرز الأدوات المتضمنة |
 | :--- | :--- | :--- | :--- |
-| 🌐 **الويب والتطوير** | `Blocks` | مكونات UI جاهزة للنسخ واللصق | **shadcn/ui**, **Aceternity UI**, **Uiverse**, **Shadcnblocks** |
-| | `Templates` | قوالب مواقع وصفحات هبوط كاملة | **Tailwind UI**, **Next.js Templates** |
-| | `AI Builders` | كتابة كود وتطوير كامل بالذكاء الاصطناعي | **v0.dev**, **Bolt.new**, **Cursor AI** |
-| | `Elements & 3D` | عناصر تصميم، مشاعد ثلاثية الأبعاد وخلفيات | **Spline 3D**, **Haikei SVG**, **Hero Patterns** |
-| 🎨 **الصور والتصميم** | `Mockup` | موكابس حية لإطارات الهواتف والشاشات | **Shots.so**, **Mockup World** |
-| | `Elements` | أيقونات، فيكتور ورسومات مفرغة بدون خلفية | **SVG Repo**, **CleanPNG**, **Photoroom** |
-| | `AI Gen` | توليد صور فوتوغرافية وفنية واقعية | **Midjourney**, **FLUX.1** |
-| | `Studio & Edit` | مضاعفة دقة الصور وإزالة الخلفيات والفيكتور | **Upscayl (8X AI)**, **Clipdrop**, **Vectorizer.ai** |
-| 🎬 **الفيديو والمونتاج** | `Stock & B-Roll` | لقطات وخامات وفيديوهات مجانية عالية الدقة | **Pexels Video**, **Mixkit** |
-| | `AI Video` | توليد وتحريك فيديوهات بالذكاء الاصطناعي | **Kling AI**, **Runway Gen-3**, **Luma Dream Machine** |
-| | `Editing & VFX` | برامج مونتاج سريعة وتوليد كابشنز وترجمة | **CapCut**, **DaVinci Resolve**, **Submagic** |
-| | `Templates` | قوالب جاهزة ومؤثرات سينمائية | **Envato Elements**, **Motion Array** |
-| 🎙️ **الصوت والمؤثرات** | `Voice AI` | استنساخ أصوات وتوليد نصوص بصوت طبيعي | **ElevenLabs**, **Fish Audio** |
-| | `Music` | توليد مقاطع موسيقية وخلفيات صوتية | **Suno AI**, **Pixabay Music** |
+| 🌐 **الويب والتطوير** | `Blocks` | مكونات UI جاهزة للنسخ واللصق | **shadcn/ui**, **Aceternity UI**, **FigCraft**, **Uiverse**, **Shadcnblocks** |
+| | `Templates` | قوالب مواقع وصفحات هبوط كاملة | **Tailwind UI**, **Next.js Templates**, **Tailblocks** |
+| | `AI Builders` | كتابة كود وتطوير كامل بالذكاء الاصطناعي | **v0.dev**, **Bolt.new**, **Cursor AI**, **VS Code** |
+| | `Elements & 3D` | عناصر تصميم، 3D، كاد ومخططات | **CadCraft**, **Spline 3D**, **Haikei**, **Hero Patterns** |
+| 🎨 **الصور والتصميم** | `Mockup` | موكابس حية لإطارات الهواتف والشاشات | **Shots.so**, **Mockup World**, **Yellow Images** |
+| | `Elements` | أيقونات، فيكتور ورسومات مفرغة | **VectorCraft**, **SVG Repo**, **CleanPNG**, **Vectorizer.ai** |
+| | `AI Gen` | توليد صور واقعية وفنية بالـ AI | **Midjourney**, **FLUX.1**, **Clipdrop** |
+| | `Studio & Edit` | استوديو تحرير كامل وتكبير 8K ومعالجة RAW | **PhotoCraft**, **LightCraft**, **DesignCraft**, **Upscayl**, **Photoroom** |
+| 🎬 **الفيديو والمونتاج** | `Stock & B-Roll` | لقطات وخامات وفيديوهات مجانية بدقة 4K | **Pexels Video**, **Mixkit**, **Envato Elements** |
+| | `AI Video` | توليد وتحريك فيديوهات سينمائية | **Kling AI**, **Runway Gen-3**, **Luma Dream Machine** |
+| | `Editing & VFX` | برامج مونتاج، موشن جرافيك وكابشنز | **FilmCraft**, **EffectCraft**, **CapCut**, **DaVinci Resolve**, **Submagic** |
+| | `Templates` | قوالب جاهزة ومؤثرات افترافكت | **Envato Elements**, **Mixkit Templates** |
+| 🎙️ **الصوت والمؤثرات** | `Voice AI` | استنساخ أصوات وتوليد نصوص واقعية | **ElevenLabs**, **Fish Audio** |
+| | `Music` | توليد مقاطع موسيقية وتراكات حرة | **Suno AI**, **Pixabay Music**, **Epidemic Sound** |
 | | `SFX` | مكتبات مؤثرات صوتية احترافية بدون حقوق | **Freesound**, **ZapSplat** |
-| | `Enhancement` | تنقية التسجيلات وإزالة الضوضاء بالذكاء الاصطناعي | **Adobe Podcast AI**, **Audacity** |
+| | `Enhancement` | محطات هندسة صوت (DAW) وتنقية AI | **SoundCraft**, **Adobe Podcast AI**, **Audacity** |
+| 📚 **مكتبية ودراسية** | `Notes & Writing` | تدوين ملاحظات، معالجة نصوص وأبحاث | **WordCraft**, **Notion**, **Obsidian**, **Overleaf (LaTeX)** |
+| | `PDF & Files` | قراءة، تعديل، دمج، وتوقيع ملفات PDF | **PdfCraft**, **iLovePDF** |
+| | `Study & Research` | بطاقات حفظ، مراجع وترجمة أكاديمية | **Anki**, **Zotero**, **DeepL Translate**, **QuillBot** |
+| | `Slides & Data` | عروض تقديمية، جداول بيانات وسبورات | **DeckCraft**, **GridCraft**, **Gamma App**, **Excalidraw**, **ArtCraft Launcher** |
 
 ---
 
-## 🗺️ مسارات العمل السريعة (Roadmaps & Dynamic Pinning)
+## 🗺️ مسارات العمل السريعة (5 Guided Roadmaps)
 
-بدل التشتت بين عشرات المواقع، يقدم الهنجر 4 مسارات إرشادية مباشرة تأخذك خطوة بخطوة من الصفر حتى الناتج النهائي، مع إمكانية **تثبيت أي أداة بديلة** على أي خطوة:
+يقدم الهنجر 5 مسارات إرشادية مباشرة تأخذك خطوة بخطوة من الصفر حتى الناتج النهائي مع إمكانية **تثبيت أي أداة بديلة** على أي خطوة:
 
 ### 1. 🌐 مسار "عايز أعمل موقع":
-* **الخطوة 01:** الهيكل والتوليد السريع بـ `v0.dev` *(يمكن استبدالها وتثبيت `Bolt.new` أو `Cursor AI`)*.
-* **الخطوة 02:** المكونات والتنسيق بـ `shadcn/ui`.
-* **الخطوة 03:** الإبهار البصري والحركات بـ `Aceternity UI`.
-* **الخطوة 04:** النشر والاستضافة السريعة على `Vercel`.
+* **01:** الهيكل والتوليد السريع بـ `v0.dev` *(أو ثبّت `Bolt.new` أو `Cursor AI`)*.
+* **02:** المكونات والتنسيق بـ `shadcn/ui` *(أو `Tailblocks`)*.
+* **03:** الإبهار البصري والحركات بـ `Uiverse` *(أو `Aceternity UI`)*.
+* **04:** النشر والاستضافة السريعة على `Vercel` *(أو `Supabase`)*.
 
 ### 2. 🛍️ مسار "عايز صورة منتج تجاري":
-* **الخطوة 01:** تنظيف الصورة وعزل الخلفية بـ `Clipdrop`.
-* **الخطوة 02:** موكاب احترافي وعصري بـ `Shots.so`.
-* **الخطوة 03:** مضاعفة الجودة 8X وتوضيح التفاصيل بـ `Upscayl`.
-* **الخطوة 04:** توليد زوايا وأفكار مبتكرة بـ `FLUX.1`.
+* **01:** تنظيف الصورة وعزل الخلفية بـ `Clipdrop`.
+* **02:** موكاب احترافي وعصري بـ `Shots.so`.
+* **03:** مضاعفة الجودة 8X وتوضيح التفاصيل بـ `Upscayl`.
+* **04:** توليد زوايا وأفكار مبتكرة بـ `FLUX.1` *(أو `PhotoCraft`)*.
 
 ### 3. 🎬 مسار "عايز أعمل فيديو":
-* **الخطوة 01:** خامات B-Roll مجانية بدقة 4K من `Pexels Video`.
-* **الخطوة 02:** تجميع ومونتاج وكابشنز سريعة بـ `CapCut`.
-* **الخطوة 03:** لقطات ومشاهد حصرية بالذكاء الاصطناعي عبر `Kling AI`.
-* **الخطوة 04:** إخراج نهائي ومؤثرات سينمائية عبر `Runway`.
+* **01:** خامات B-Roll مجانية بدقة 4K من `Pexels Video`.
+* **02:** تجميع ومونتاج وكابشنز سريعة بـ `CapCut` *(أو `FilmCraft` أو `DaVinci`)*.
+* **03:** لقطات ومشاهد حصرية بالذكاء الاصطناعي عبر `Kling AI` *(أو `EffectCraft`)*.
+* **04:** إخراج نهائي ومؤثرات سينمائية عبر `Runway`.
 
 ### 4. 🎙️ مسار "عايز أعمل بودكاست":
-* **الخطوة 01:** تسجيل وتقطيع الصوت بـ `Audacity`.
-* **الخطوة 02:** تنقية وعزل الصدى بجودة الاستوديو عبر `Adobe Podcast`.
-* **الخطوة 03:** فواصل ومؤثرات صوتية واقعية من `Freesound`.
-* **الخطوة 04:** دبلجة وتعليق صوتي فائق الواقعية عبر `ElevenLabs`.
+* **01:** تسجيل وتقطيع الصوت بـ `Adobe Podcast` *(أو `SoundCraft` أو `Audacity`)*.
+* **02:** تنقية وعزل الصدى ودبلجة عبر `ElevenLabs`.
+* **03:** فواصل ومؤثرات صوتية واقعية من `Freesound`.
+* **04:** نشر ومشاركة الحلقة على منصات البودكاست.
+
+### 5. 📚 مسار "عايز أذاكر وأعمل بحث" (جديد في 1.1.1):
+* **01:** جمع وتنظيم المراجع والبحوث تلقائياً بـ `Zotero` *(أو `Notion` أو `Obsidian`)*.
+* **02:** تلخيص وترجمة الأوراق العلمية بدقة فائقة بـ `DeepL Translate` *(أو `QuillBot` أو `Anki`)*.
+* **03:** صياغة وتنسيق البحث الأكاديمي بـ `WordCraft` *(أو `Overleaf LaTeX`)*.
+* **04:** تصميم سلايدات وعرض المناقشة بـ `DeckCraft` *(أو `Gamma App`)*.
 
 ---
 
 ## ⚖️ مقارنة: التطبيق المكتبي مقابل نسخة الويب
 
 | الميزة | 💻 تطبيق ويندوز المكتبي (Desktop) | 🌐 نسخة الويب (Web Browser) |
-| :--- | :---: | :---: |
+| :--- | :--- :---: |
 | **سرعة الوصول** | تشغيل مباشر من أيقونة الديسك توب وقائمة ابدأ | يحتاج فتح المتصفح والدخول للرابط |
 | **استهلاك الموارد** | فائق الخفة (~40MB RAM) بمحرك WebView2 الأصلي | يستهلك موارد إضافية حسب تبويبات المتصفح |
 | **التحديث التلقائي** | ✅ يفحص ويحدث تلقائياً بصمت دون تدخل | يتطلب إعادة تحميل الصفحة وتحديث الكاش |
@@ -121,7 +152,7 @@
 
 ---
 
-## ❓ الأسئلة الشائعة واستكشاف الأخطاء (FAQ & Troubleshooting)
+## ❓ الأسئلة الشائعة واستكشاف الأخطاء (FAQ)
 
 <details>
 <summary><b>س: ظهرت لي رسالة "Windows protected your PC" (SmartScreen) عند فتح المثبت، هل هذا طبيعي؟</b></summary>
@@ -146,17 +177,9 @@
 <b>ج:</b> يقوم البرنامج عند بدء تشغيله بفحص ملف <code>version.json</code> على المستودع الرسمي عبر اتصال مشفر (TLS 1.2). إذا وجد إصداراً أحدث، يقوم بتحميل التحديث وتثبيته تلقائياً دون إزعاج.
 </details>
 
-<details>
-<summary><b>س: كيف يمكنني استعادة المسار الافتراضي إذا قمت بتغيير أداة مثبتة؟</b></summary>
-<br>
-<b>ج:</b> في بطاقة أي خطوة في المسار، ستجد زر "استعادة الأداة الأصلية" أو يمكنك الضغط على زر "إعادة تعيين المسار كاملاً" بجانب عنوان المسار لاسترجاع التوزيعة القياسية في أي لحظة.
-</details>
-
 ---
 
 ## 🚀 تشغيل نسخة الويب محلياً (Web Development)
-
-إذا كنت ترغب في تشغيل أو تعديل كود واجهة الويب محلياً:
 
 ```bash
 cd GOat
@@ -188,20 +211,14 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /optimize
 يتحكم ملف [`version.json`](./version.json) في إشعار المستخدمين بالتحديثات:
 ```json
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "name": "The Hangar",
   "releaseDate": "2026-10-24",
-  "releaseNotes": "الإصدار 1.1.0 — دعم تخصيص وتثبيت الأدوات في مسارات العمل ديناميكياً (Pinning)، وتفريعات التصنيفات الذكية (Blocks, Templates, Mockup, Elements)، مع اختصارات ويندوز الأصلية وتحسينات الأمان.",
+  "releaseNotes": "الإصدار 1.1.1 — إضافة حزمة تطبيقات ArtCraft الـ 13 المبنية بلغة Rust، وتدشين مسار جديد كلياً للأدوات المكتبية والدراسية مع خارطة طريق خاصة بالأبحاث والمذاكرة.",
   "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe",
   "mandatory": false
 }
 ```
-
-### لإطلاق تحديث جديد:
-1. ارفع ملف `The_Hangar_Setup.exe` الجديد في GitHub Releases تحت الرابط المباشر:
-   `https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe`
-2. عدّل رقم الإصدار في `version.json` على المستودع واعمل `git push` إلى فرع `main`.
-3. فور اتصال أي مستخدم بالإنترنت وتشغيل البرنامج، سيكتشف التحديث ويقوم بالترقية الفورية بلمسة زر واحدة!
 
 ---
 
@@ -221,5 +238,5 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /optimize
 ---
 
 <p align="center">
-  <sub>صُنع بكل ❤️ لدعم المطورين وصناع المحتوى العرب · مرخص تحت رخصة Apache 2.0</sub>
+  <sub>صُنع بكل ❤️ لدعم المطورين وصناع المحتوى والطلاب العرب · مرخص تحت رخصة Apache 2.0</sub>
 </p>

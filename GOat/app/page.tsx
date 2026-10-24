@@ -21,7 +21,7 @@ import {
   Zap,
 } from 'lucide-react'
 
-export type Track = 'الكل' | 'الويب' | 'صور' | 'فيديو' | 'صوت'
+export type Track = 'الكل' | 'الويب' | 'صور' | 'فيديو' | 'صوت' | 'مكتبية ودراسية'
 export type Tier = 'free' | 'trial' | 'pro'
 
 export type Tool = {
@@ -58,6 +58,7 @@ export const subCategoriesByTrack: Record<Track, SubCategoryOption[]> = {
     { id: 'mockup', labelEn: 'Mockups', labelAr: 'موكاب ونماذج' },
     { id: 'elements', labelEn: 'Elements', labelAr: 'عناصر وفيكتور' },
     { id: 'ai', labelEn: 'AI Powered', labelAr: 'ذكاء اصطناعي' },
+    { id: 'study', labelEn: 'Office & Study', labelAr: 'مكتبية ودراسية' },
   ],
   'الويب': [
     { id: 'all', labelEn: 'All', labelAr: 'الكل' },
@@ -86,6 +87,13 @@ export const subCategoriesByTrack: Record<Track, SubCategoryOption[]> = {
     { id: 'music', labelEn: 'Music', labelAr: 'موسيقى وألحان' },
     { id: 'sfx', labelEn: 'SFX', labelAr: 'مؤثرات صوتية' },
     { id: 'enhancement', labelEn: 'Enhancement', labelAr: 'تنقية وهندسة صوت' },
+  ],
+  'مكتبية ودراسية': [
+    { id: 'all', labelEn: 'All', labelAr: 'الكل' },
+    { id: 'notes-writing', labelEn: 'Notes & Writing', labelAr: 'تدوين ومستندات' },
+    { id: 'pdf-docs', labelEn: 'PDF & Files', labelAr: 'تحرير PDF وملفات' },
+    { id: 'study-research', labelEn: 'Study & Research', labelAr: 'بحث ومذاكرة' },
+    { id: 'slides-data', labelEn: 'Slides & Data', labelAr: 'عروض وجداول' },
   ],
 }
 
@@ -142,6 +150,40 @@ export const tools: Tool[] = [
   { id: 'suno', name: 'Suno AI', nameAr: 'سونو', description: 'صانع الأغاني والموسيقى بالذكاء الاصطناعي؛ ولّد أغنية كاملة بكلمات وألحان من فكرتك', tags: ['AI', 'MusicGen', 'Songs', 'Audio'], subCategories: ['music', 'voice-ai'], track: 'صوت', tier: 'trial', emoji: '🎵', domain: 'suno.com', url: 'https://suno.com' },
   { id: 'fishaudio', name: 'Fish Audio', nameAr: 'فيش أوديو', description: 'محرك استنساخ أصوات سريع وتوليد تعابير صوتية عالية الدقة للمحتوى التفاعلي', tags: ['AI', 'VoiceCloning', 'LowLatency', 'Audio'], subCategories: ['voice-ai'], track: 'صوت', tier: 'trial', emoji: '🐟', domain: 'fish.audio', url: 'https://fish.audio' },
   { id: 'epidemicsound', name: 'Epidemic Sound', nameAr: 'إبيديميك ساوند', description: 'المعيار الذهبي لموسيقى اليوتيوب وصناع الأفلام بدون أي تحذيرات حقوق (Copyright-safe)', tags: ['Music', 'Licensing', 'Creators', 'Pro'], subCategories: ['music'], track: 'صوت', tier: 'pro', emoji: '🎼', domain: 'epidemicsound.com', url: 'https://www.epidemicsound.com' },
+
+  // 🌐 برامج ArtCraft المضافة لمسار الويب
+  { id: 'figcraft', name: 'FigCraft', nameAr: 'فيج كرافت', description: 'بديل فيجما المكتبي المفتوح المصدر المكتوب بـ Rust؛ تصميم واجهات UI/UX، بروتوتايبينج تفاعلي وأنظمة تصميم متكاملة', tags: ['UI/UX', 'FigmaAlternative', 'Prototyping', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['blocks', 'elements-3d'], track: 'الويب', tier: 'free', emoji: '❖', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/figcraft' },
+  { id: 'cadcraft', name: 'CadCraft', nameAr: 'كاد كرافت', description: 'بديل AutoCAD مفتوح المصدر للتصميم الهندسي والرسم المعماري ثنائي وثلاثي الأبعاد وتصدير مخططات DXF', tags: ['CAD', 'AutoCADAlternative', '3DModeling', 'Architecture', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['elements-3d'], track: 'الويب', tier: 'free', emoji: '📐', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/cadcraft' },
+
+  // 🎨 برامج ArtCraft المضافة لمسار الصور والتصميم
+  { id: 'photocraft', name: 'PhotoCraft', nameAr: 'فوتو كرافت', description: 'بديل فوتوشوب المفتوح المصدر بلغة Rust؛ طبقات، ماسكات، تعديل ألوان، ودعم كامل لقراءة وحفظ ملفات PSD و PSB', tags: ['OpenSource', 'Rust', 'PhotoshopAlternative', 'Desktop', 'PSD', 'ArtCraft'], subCategories: ['studio'], track: 'صور', tier: 'free', emoji: '🎨', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/photocraft' },
+  { id: 'vectorcraft', name: 'VectorCraft', nameAr: 'فيكتور كرافت', description: 'بديل إليستريتور مفتوح المصدر؛ رسم فيكتور هندسي، أداة Pen مسارات منحنية، ودعم تصدير SVG و PDF احترافي', tags: ['Vector', 'IllustratorAlternative', 'OpenSource', 'Rust', 'SVG', 'ArtCraft'], subCategories: ['elements'], track: 'صور', tier: 'free', emoji: '📐', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/vectorcraft' },
+  { id: 'lightcraft', name: 'LightCraft', nameAr: 'لايت كرافت', description: 'بديل لايت روم لمعالجة وتحميض صور RAW وتدريج الإضاءة والظلال والألوان بسرعة فائقة بدون اشتراك', tags: ['RAW', 'Photography', 'LightroomAlternative', 'ColorGrading', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['studio'], track: 'صور', tier: 'free', emoji: '💡', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/lightcraft' },
+  { id: 'designcraft', name: 'DesignCraft', nameAr: 'ديزاين كرافت', description: 'بديل InDesign مفتوح المصدر لتنسيق وتصميم المجلات والكتيبات والبروشورات المطبوعة والرقمية بدقة بصرية متناهية', tags: ['PageLayout', 'InDesignAlternative', 'Publishing', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['studio', 'mockup'], track: 'صور', tier: 'free', emoji: '📑', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/designcraft' },
+
+  // 🎬 برامج ArtCraft المضافة لمسار الفيديو والمونتاج
+  { id: 'filmcraft', name: 'FilmCraft', nameAr: 'فيلم كرافت', description: 'بديل Premiere مفتوح المصدر بلغة Rust؛ تايم لاين متعدد المسارات، قص ومونتاج فيديو سلس بدون استهلاك لموارد المعالج', tags: ['VideoEditing', 'PremiereAlternative', 'OpenSource', 'Rust', 'Timeline', 'ArtCraft'], subCategories: ['editing'], track: 'فيديو', tier: 'free', emoji: '🎬', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/filmcraft' },
+  { id: 'effectcraft', name: 'EffectCraft', nameAr: 'إيفيكت كرافت', description: 'بديل After Effects للموشن جرافيك والمؤثرات البصرية وتنسيق الكي فريمز والأنيميشن الاحترافي', tags: ['MotionGraphics', 'AfterEffectsAlternative', 'VFX', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['editing', 'templates'], track: 'فيديو', tier: 'free', emoji: '💥', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/effectcraft' },
+
+  // 🎙️ برامج ArtCraft المضافة لمسار الصوت والمؤثرات
+  { id: 'soundcraft', name: 'SoundCraft', nameAr: 'ساوند كرافت', description: 'محطة عمل صوتية رقمية (DAW) بديلة لـ Audition؛ تسجيل، تقطيع، فلاتر، وتأثيرات وهندسة صوتية متعددة المسارات', tags: ['DAW', 'AudioEditing', 'AuditionAlternative', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['enhancement'], track: 'صوت', tier: 'free', emoji: '🎚️', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/soundcraft' },
+
+  // 📚 مسار الأدوات المكتبية والدراسية (Office & Study Track)
+  { id: 'pdfcraft', name: 'PdfCraft', nameAr: 'بي دي إف كرافت', description: 'بديل Adobe Acrobat Pro مفتوح المصدر؛ قراءة، دمج، تقسيم، تعديل، ملء استمارات، وتوقيع ملفات PDF مجاناً', tags: ['PDF', 'AcrobatAlternative', 'Editor', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['pdf-docs'], track: 'مكتبية ودراسية', tier: 'free', emoji: '📕', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/pdfcraft' },
+  { id: 'wordcraft', name: 'WordCraft', nameAr: 'وورد كرافت', description: 'بديل Microsoft Word مفتوح المصدر وخفيف جداً لمعالجة النصوص وصياغة الأبحاث والمقالات باحترافية بدون بطء', tags: ['WordProcessor', 'Docs', 'WordAlternative', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['notes-writing'], track: 'مكتبية ودراسية', tier: 'free', emoji: '📝', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/wordcraft' },
+  { id: 'deckcraft', name: 'DeckCraft', nameAr: 'ديك كرافت', description: 'بديل PowerPoint مفتوح المصدر لإنشاء عروض تقديمية (Pitch Decks) وسلايدات عصرية جذابة وتفاعلية للجامعة والعمل', tags: ['Presentations', 'Slides', 'PowerPointAlternative', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['slides-data'], track: 'مكتبية ودراسية', tier: 'free', emoji: '📊', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/deckcraft' },
+  { id: 'gridcraft', name: 'GridCraft', nameAr: 'جريد كرافت', description: 'بديل Excel مفتوح المصدر؛ جداول بيانات سريعة، دوال ومعادلات متقدمة، وتحليل رقمي ورسوم بيانية فورية', tags: ['Spreadsheets', 'ExcelAlternative', 'Formulas', 'OpenSource', 'Rust', 'ArtCraft'], subCategories: ['slides-data'], track: 'مكتبية ودراسية', tier: 'free', emoji: '📈', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps/gridcraft' },
+  { id: 'artcraftlauncher', name: 'ArtCraft Launcher', nameAr: 'مشغل آرت كرافت', description: 'المشغل المكتبي الرسمي لتحميل وتثبيت وتحديث جميع برامج ArtCraft الـ 13 على جهازك بنقرة واحدة', tags: ['Launcher', 'OpenSource', 'Rust', 'Suite', 'Desktop', 'ArtCraft'], subCategories: ['all'], track: 'مكتبية ودراسية', tier: 'free', emoji: '🚀', domain: 'getartcraft.com', url: 'https://getartcraft.com/apps' },
+  { id: 'notion', name: 'Notion', nameAr: 'نوشن', description: 'مساحة العمل المتكاملة الأقوى لإدارة الملاحظات، الجداول الدراسية، قواعد البيانات، والمهام والمشاريع التشاركية', tags: ['Notes', 'Productivity', 'Workspace', 'Study'], subCategories: ['notes-writing', 'study-research'], track: 'مكتبية ودراسية', tier: 'trial', emoji: '📓', domain: 'notion.so', url: 'https://www.notion.so' },
+  { id: 'obsidian', name: 'Obsidian', nameAr: 'أوبسيديان', description: 'تدوين الملاحظات المعرفية وبناء عقل ثانٍ (Second Brain) محلياً بملفات Markdown مشفرة وآمنة على جهازك', tags: ['Markdown', 'SecondBrain', 'Notes', 'LocalFirst'], subCategories: ['notes-writing', 'study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '💎', domain: 'obsidian.md', url: 'https://obsidian.md' },
+  { id: 'anki', name: 'Anki', nameAr: 'أنكي', description: 'البرنامج الأسطوري للمذاكرة والحفظ بالبطاقات التعليمية وخوارزمية التكرار المتباعد (Spaced Repetition)', tags: ['Flashcards', 'Study', 'Memory', 'OpenSource'], subCategories: ['study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '💡', domain: 'apps.ankiweb.net', url: 'https://apps.ankiweb.net' },
+  { id: 'zotero', name: 'Zotero', nameAr: 'زوتيرو', description: 'المساعد الأكاديمي المجاني الأقوى لجمع وتنظيم واستشهاد المراجع والأبحاث العلمية وتوليد بيبلوغرافيا تلقائية', tags: ['Academic', 'Research', 'Citations', 'OpenSource'], subCategories: ['study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '📚', domain: 'zotero.org', url: 'https://www.zotero.org' },
+  { id: 'overleaf', name: 'Overleaf (LaTeX)', nameAr: 'أوفر ليف', description: 'محرر LaTeX السحابي لكتابة الأوراق العلمية والأطروحات الرياضية والهندسية بنسق النشر الأكاديمي الدولي', tags: ['LaTeX', 'Academic', 'Writing', 'Research'], subCategories: ['notes-writing', 'study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '🍃', domain: 'overleaf.com', url: 'https://www.overleaf.com' },
+  { id: 'gamma', name: 'Gamma App', nameAr: 'جاما', description: 'توليد عروض تقديمية (Slides) ووثائق ومستندات دراسية متناسقة بالذكاء الاصطناعي في ثوانٍ معدودة', tags: ['AI', 'Presentations', 'Slides', 'Design'], subCategories: ['slides-data'], track: 'مكتبية ودراسية', tier: 'trial', emoji: '⚡', domain: 'gamma.app', url: 'https://gamma.app' },
+  { id: 'excalidraw', name: 'Excalidraw', nameAr: 'إكسكاليدرو', description: 'سبورة بيضاء تفاعلية سريعة ومجانية للرسم التخطيطي اليدوي، الخرائط الذهنية ومخططات الفهم والعصف الذهني', tags: ['Whiteboard', 'MindMap', 'Diagrams', 'OpenSource'], subCategories: ['slides-data', 'study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '✏️', domain: 'excalidraw.com', url: 'https://excalidraw.com' },
+  { id: 'deepl', name: 'DeepL Translate', nameAr: 'ديب إل', description: 'المترجم الأكثر دقة واحترافية في العالم لترجمة الأبحاث والمستندات الأكاديمية بنبرة لغوية بشرية طبيعية', tags: ['Translation', 'AI', 'Academic', 'Free'], subCategories: ['study-research'], track: 'مكتبية ودراسية', tier: 'free', emoji: '🌐', domain: 'deepl.com', url: 'https://www.deepl.com/translator' },
+  { id: 'quillbot', name: 'QuillBot', nameAr: 'كويل بوت', description: 'إعادة صياغة النصوص الإنجليزية، تصحيح القواعد اللغوية، وتلخيص المقالات الطويلة للأبحاث والواجبات', tags: ['Paraphrasing', 'Grammar', 'Summarizer', 'AI'], subCategories: ['notes-writing', 'study-research'], track: 'مكتبية ودراسية', tier: 'trial', emoji: '🪶', domain: 'quillbot.com', url: 'https://quillbot.com' },
+  { id: 'ilovepdf', name: 'iLovePDF', nameAr: 'آي لاف بي دي إف', description: 'المنصة الشاملة لدمج، تقسيم، ضغط، وتحويل ملفات الـ PDF وصورها مجاناً في ثوانٍ بدون تعقيد', tags: ['PDF', 'Convert', 'Compress', 'Tools'], subCategories: ['pdf-docs'], track: 'مكتبية ودراسية', tier: 'free', emoji: '❤️', domain: 'ilovepdf.com', url: 'https://www.ilovepdf.com' },
 ]
 
 export interface RoadmapStep {
@@ -207,6 +249,18 @@ export const roadmaps: Roadmap[] = [
       { number: '02', title: 'حسّن الصوت', defaultTool: 'ElevenLabs', defaultUrl: 'https://elevenlabs.io', recommendedToolIds: ['elevenlabs', 'fishaudio', 'adobe'] },
       { number: '03', title: 'ضيف مؤثرات', defaultTool: 'Freesound', defaultUrl: 'https://freesound.org', recommendedToolIds: ['freesound', 'pixabaymusic', 'epidemicsound'] },
       { number: '04', title: 'انشر الحلقة', defaultTool: 'Spotify', defaultUrl: 'https://spotify.com', recommendedToolIds: ['suno', 'epidemicsound'] },
+    ],
+  },
+  {
+    id: 'study',
+    icon: '📚',
+    title: 'عايز أذاكر وأعمل بحث',
+    subtitle: 'تنظيم المراجع، الصياغة، والعروض',
+    steps: [
+      { number: '01', title: 'اجمع مراجعك', defaultTool: 'Zotero', defaultUrl: 'https://www.zotero.org', recommendedToolIds: ['zotero', 'notion', 'obsidian', 'pdfcraft'] },
+      { number: '02', title: 'لخص وترجم', defaultTool: 'DeepL Translate', defaultUrl: 'https://www.deepl.com/translator', recommendedToolIds: ['deepl', 'quillbot', 'anki'] },
+      { number: '03', title: 'اكتب البحث', defaultTool: 'WordCraft', defaultUrl: 'https://getartcraft.com/apps/wordcraft', recommendedToolIds: ['wordcraft', 'overleaf', 'notion', 'gridcraft'] },
+      { number: '04', title: 'جهّز العرض', defaultTool: 'DeckCraft', defaultUrl: 'https://getartcraft.com/apps/deckcraft', recommendedToolIds: ['deckcraft', 'gamma', 'excalidraw'] },
     ],
   },
 ]
@@ -350,6 +404,7 @@ export default function Page() {
         if (subId === 'mockup') return tool.subCategories.includes('mockup')
         if (subId === 'elements') return tool.subCategories.includes('elements') || tool.subCategories.includes('elements-3d')
         if (subId === 'ai') return tool.subCategories.some((sc) => sc.includes('ai') || sc.includes('voice'))
+        if (subId === 'study') return tool.track === 'مكتبية ودراسية'
         return true
       }
       return tool.subCategories.includes(subId)
@@ -374,6 +429,7 @@ export default function Page() {
           else if (subCategory === 'mockup') matchesSub = tool.subCategories.includes('mockup')
           else if (subCategory === 'elements') matchesSub = tool.subCategories.includes('elements') || tool.subCategories.includes('elements-3d')
           else if (subCategory === 'ai') matchesSub = tool.subCategories.some((sc) => sc.includes('ai') || sc.includes('voice'))
+          else if (subCategory === 'study') matchesSub = tool.track === 'مكتبية ودراسية'
         } else {
           matchesSub = tool.subCategories.includes(subCategory)
         }
@@ -408,7 +464,7 @@ export default function Page() {
               <div className="flex items-center gap-2">
                 <p className="font-display text-xl font-bold leading-none">الهنجر</p>
                 <span className="rounded-full border border-[#f4b844]/60 bg-[#f4b844]/20 px-2 py-0.5 font-mono text-[10px] font-bold text-[#b97812]">
-                  v1.1.0
+                  v1.1.1
                 </span>
               </div>
               <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#71807f]">The Hangar · Toolbox</p>
@@ -499,7 +555,7 @@ export default function Page() {
               animate={{ opacity: 1, y: 0 }}
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d9ddd5] bg-white/70 px-3.5 py-1.5 text-xs font-bold text-[#62706c]"
             >
-              <span className="size-2 rounded-full bg-emerald-400" /> مفتوحين دلوقتي · الإصدار 1.1.0 · {tools.length} أداة متجمعة
+              <span className="size-2 rounded-full bg-emerald-400" /> مفتوحين دلوقتي · الإصدار 1.1.1 · {tools.length} أداة متجمعة
             </motion.div>
             <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.08 }} className="font-display text-5xl font-black leading-[1.04] tracking-tight sm:text-7xl">
               {['ورشتك', 'الرقمية،'].map((word, index) => (
@@ -535,7 +591,7 @@ export default function Page() {
             </motion.p>
           </div>
           <div className="pointer-events-none absolute left-0 top-16 hidden text-left font-mono text-[10px] leading-5 text-[#b7bfba] lg:block">
-            WORKSHOP_1.1.0<br />
+            WORKSHOP_1.1.1<br />
             PINNING / SUB-TAXONOMY / SPEED<br />
             <span className="text-[#d89124]">● SYSTEM READY</span>
           </div>
@@ -558,7 +614,7 @@ export default function Page() {
           </div>
 
           {/* Goal Selector Cards */}
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {roadmaps.map((roadmap) => (
               <button
                 key={roadmap.id}
@@ -720,7 +776,7 @@ export default function Page() {
               />
             </div>
             <div className="flex flex-wrap gap-2">
-              {(['الكل', 'الويب', 'صور', 'فيديو', 'صوت'] as Track[]).map((item) => (
+              {(['الكل', 'الويب', 'صور', 'فيديو', 'صوت', 'مكتبية ودراسية'] as Track[]).map((item) => (
                 <button
                   key={item}
                   onClick={() => handleTrackChange(item)}

@@ -4,7 +4,7 @@
 [Setup]
 AppId={{C6415B17-4B38-4C2E-8E3D-9457DEAF2132}
 AppName=الهنجر — The Hangar
-AppVersion=1.1.0
+AppVersion=1.1.1
 AppPublisher=Morad (AMOX)
 AppPublisherURL=https://github.com/AMOXMorad
 DefaultDirName={localappdata}\Programs\The Hangar
