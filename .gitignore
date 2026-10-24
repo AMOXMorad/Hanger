@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js build outputs
+.next/
+out/
+dist/
+Hangar_1.0.html
+THANK_YOU.html
+
+# Environment files
+.env
+.env*.local
+
+# Cache and temp
+.turbo/
+*.log
+TheHangar_Payload.zip
+
+# Old prototype and reference archives
+The_Pickles_Fridge*
+the-hangar-web-application.zip
+/src/
+/vite.config.ts
+/package-lock.json
+/package.json
+/tsconfig.json
+/index.html
+
+# Windows / OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# User data
+WebView2Data/
+Cache/
