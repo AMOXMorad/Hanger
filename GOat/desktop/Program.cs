@@ -15,7 +15,7 @@ namespace TheHangar
     {
         private const string AppMutexName = "Global\\TheHangar_AMOX_Instance_Mutex";
         private const string VirtualHostName = "hangar.local";
-        public const string AppVersion = "1.0.0";
+        public const string AppVersion = "1.1.0";
         public const string UpdateCheckUrl = "https://raw.githubusercontent.com/AMOXMorad/Hanger/main/version.json";
 
         [DllImport("user32.dll")]
@@ -37,6 +37,7 @@ namespace TheHangar
         {
             try
             {
+                System.Net.ServicePointManager.SecurityProtocol = (System.Net.SecurityProtocolType)3072 | (System.Net.SecurityProtocolType)768 | System.Net.SecurityProtocolType.Tls;
                 if (Environment.OSVersion.Version.Major >= 6)
                 {
                     SetProcessDPIAware();
@@ -283,6 +284,7 @@ namespace TheHangar
             {
                 try
                 {
+                    System.Net.ServicePointManager.SecurityProtocol = (System.Net.SecurityProtocolType)3072 | (System.Net.SecurityProtocolType)768 | System.Net.SecurityProtocolType.Tls;
                     using (System.Net.WebClient client = new System.Net.WebClient())
                     {
                         client.Headers.Add("User-Agent", "TheHangar-App");

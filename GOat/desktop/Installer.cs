@@ -5,6 +5,8 @@ using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
@@ -382,15 +384,34 @@ namespace TheHangar
             if (makeDesktop)
             {
                 string desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-                CreateShortcut(Path.Combine(desktop, "الهنجر.lnk"), exePath, targetDir, icoPath);
+                CreateNativeShortcut(Path.Combine(desktop, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"), exePath, targetDir, icoPath, "الهنجر — ورشتك الرقمية");
+                CreateNativeShortcut(Path.Combine(desktop, "The Hangar.lnk"), exePath, targetDir, icoPath, "The Hangar — Your Digital Workshop");
             }
 
             if (makeStart)
             {
-                string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                string startDir = Path.Combine(appData, @"Microsoft\Windows\Start Menu\Programs");
-                Directory.CreateDirectory(startDir);
-                CreateShortcut(Path.Combine(startDir, "الهنجر.lnk"), exePath, targetDir, icoPath);
+                string programs = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+                if (string.IsNullOrEmpty(programs))
+                {
+                    programs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Start Menu\Programs");
+                }
+                Directory.CreateDirectory(programs);
+
+                // Root shortcuts in Start Menu for instant Windows search indexing
+                CreateNativeShortcut(Path.Combine(programs, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"), exePath, targetDir, icoPath, "الهنجر — ورشتك الرقمية");
+                CreateNativeShortcut(Path.Combine(programs, "The Hangar.lnk"), exePath, targetDir, icoPath, "The Hangar — Your Digital Workshop");
+
+                // Start Menu Subfolder
+                string folder = Path.Combine(programs, "\u0627\u0644\u0647\u0646\u062c\u0631");
+                Directory.CreateDirectory(folder);
+                CreateNativeShortcut(Path.Combine(folder, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"), exePath, targetDir, icoPath, "الهنجر — ورشتك الرقمية");
+                CreateNativeShortcut(Path.Combine(folder, "The Hangar.lnk"), exePath, targetDir, icoPath, "The Hangar — Your Digital Workshop");
+
+                string uninstPath = Path.Combine(targetDir, "Uninstall.exe");
+                if (File.Exists(uninstPath))
+                {
+                    CreateNativeShortcut(Path.Combine(folder, "\u0625\u0644\u063a\u0627\u0621 \u0627\u0644\u062a\u062b\u0628\u064a\u062a.lnk"), uninstPath, targetDir, icoPath, "إلغاء تثبيت الهنجر");
+                }
             }
 
             // Register in Windows Uninstall
@@ -444,33 +465,35 @@ namespace TheHangar
             Close();
         }
 
-        private void CreateShortcut(string shortcutPath, string targetPath, string workingDir, string iconPath)
+        private static void CreateNativeShortcut(string shortcutPath, string targetPath, string workingDir, string iconPath, string description)
         {
             try
             {
-                Type shellType = Type.GetTypeFromProgID("WScript.Shell");
-                if (shellType == null) return;
-
-                object shell = Activator.CreateInstance(shellType);
-                object shortcut = shellType.InvokeMember(
-                    "CreateShortcut",
-                    BindingFlags.InvokeMethod,
-                    null,
-                    shell,
-                    new object[] { shortcutPath }
-                );
-
-                Type scType = shortcut.GetType();
-                scType.InvokeMember("TargetPath", BindingFlags.SetProperty, null, shortcut, new object[] { targetPath });
-                scType.InvokeMember("WorkingDirectory", BindingFlags.SetProperty, null, shortcut, new object[] { workingDir });
-                if (File.Exists(iconPath))
+                string dir = Path.GetDirectoryName(shortcutPath);
+                if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
                 {
-                    scType.InvokeMember("IconLocation", BindingFlags.SetProperty, null, shortcut, new object[] { iconPath + ",0" });
+                    Directory.CreateDirectory(dir);
                 }
-                scType.InvokeMember("Description", BindingFlags.SetProperty, null, shortcut, new object[] { "الهنجر — ورشتك الرقمية" });
-                scType.InvokeMember("Save", BindingFlags.InvokeMethod, null, shortcut, null);
+
+                IShellLinkW link = (IShellLinkW)new ShellLink();
+                link.SetPath(targetPath);
+                link.SetWorkingDirectory(workingDir);
+                if (!string.IsNullOrEmpty(description))
+                {
+                    link.SetDescription(description);
+                }
+                if (!string.IsNullOrEmpty(iconPath) && File.Exists(iconPath))
+                {
+                    link.SetIconLocation(iconPath, 0);
+                }
+
+                IPersistFile file = (IPersistFile)link;
+                file.Save(shortcutPath, true);
             }
-            catch { }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Shortcut creation error: " + ex.Message);
+            }
         }
 
         private void RegisterUninstall(string installDir, string exePath, string icoPath)
@@ -484,7 +507,7 @@ namespace TheHangar
                     {
                         if (appKey == null) return;
                         appKey.SetValue("DisplayName", "الهنجر — The Hangar");
-                        appKey.SetValue("DisplayVersion", "1.0.0");
+                        appKey.SetValue("DisplayVersion", "1.1.0");
                         appKey.SetValue("Publisher", "Morad (AMOX)");
                         appKey.SetValue("DisplayIcon", icoPath);
                         appKey.SetValue("InstallLocation", installDir);
@@ -497,5 +520,47 @@ namespace TheHangar
             }
             catch { }
         }
+    }
+
+    [ComImport]
+    [Guid("00021401-0000-0000-C000-000000000046")]
+    internal class ShellLink { }
+
+    [ComImport]
+    [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    [Guid("000214F9-0000-0000-C000-000000000046")]
+    internal interface IShellLinkW
+    {
+        void GetPath([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder pszFile, int cchMaxPath, out IntPtr pfd, int fFlags);
+        void GetIDList(out IntPtr ppidl);
+        void SetIDList(IntPtr pidl);
+        void GetDescription([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder pszName, int cchMaxName);
+        void SetDescription([MarshalAs(UnmanagedType.LPWStr)] string pszName);
+        void GetWorkingDirectory([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder pszDir, int cchMaxPath);
+        void SetWorkingDirectory([MarshalAs(UnmanagedType.LPWStr)] string pszDir);
+        void GetArguments([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder pszArgs, int cchMaxPath);
+        void SetArguments([MarshalAs(UnmanagedType.LPWStr)] string pszArgs);
+        void GetHotkey(out short pwHotkey);
+        void SetHotkey(short wHotkey);
+        void GetShowCmd(out int piShowCmd);
+        void SetShowCmd(int iShowCmd);
+        void GetIconLocation([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder pszIconPath, int cchIconPath, out int piIcon);
+        void SetIconLocation([MarshalAs(UnmanagedType.LPWStr)] string pszIconPath, int iIcon);
+        void SetRelativePath([MarshalAs(UnmanagedType.LPWStr)] string pszPathRel, int dwReserved);
+        void Resolve(IntPtr hwnd, int fFlags);
+        void SetPath([MarshalAs(UnmanagedType.LPWStr)] string pszFile);
+    }
+
+    [ComImport]
+    [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    [Guid("0000010b-0000-0000-C000-000000000046")]
+    internal interface IPersistFile
+    {
+        void GetClassID(out Guid pClassID);
+        void IsDirty();
+        void Load([MarshalAs(UnmanagedType.LPWStr)] string pszFileName, int dwMode);
+        void Save([MarshalAs(UnmanagedType.LPWStr)] string pszFileName, [MarshalAs(UnmanagedType.Bool)] bool fRemember);
+        void SaveCompleted([MarshalAs(UnmanagedType.LPWStr)] string pszFileName);
+        void GetCurFile([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder ppszFileName);
     }
 }

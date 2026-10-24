@@ -26,20 +26,36 @@ namespace TheHangar
 
             try
             {
-                // 1. Remove Desktop shortcut
+                // 1. Remove Desktop shortcuts
                 string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-                string desktopShortcut = Path.Combine(desktopPath, "الهنجر.lnk");
-                if (File.Exists(desktopShortcut))
+                string[] desktopShortcuts = {
+                    Path.Combine(desktopPath, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"),
+                    Path.Combine(desktopPath, "The Hangar.lnk")
+                };
+                foreach (string sc in desktopShortcuts)
                 {
-                    try { File.Delete(desktopShortcut); } catch { }
+                    if (File.Exists(sc)) { try { File.Delete(sc); } catch { } }
                 }
 
-                // 2. Remove Start Menu shortcut
-                string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                string startMenuShortcut = Path.Combine(appData, @"Microsoft\Windows\Start Menu\Programs\الهنجر.lnk");
-                if (File.Exists(startMenuShortcut))
+                // 2. Remove Start Menu shortcuts & folder
+                string programs = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+                if (string.IsNullOrEmpty(programs))
                 {
-                    try { File.Delete(startMenuShortcut); } catch { }
+                    programs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Start Menu\Programs");
+                }
+                string[] startShortcuts = {
+                    Path.Combine(programs, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"),
+                    Path.Combine(programs, "The Hangar.lnk")
+                };
+                foreach (string sc in startShortcuts)
+                {
+                    if (File.Exists(sc)) { try { File.Delete(sc); } catch { } }
+                }
+
+                string startFolder = Path.Combine(programs, "\u0627\u0644\u0647\u0646\u062c\u0631");
+                if (Directory.Exists(startFolder))
+                {
+                    try { Directory.Delete(startFolder, true); } catch { }
                 }
 
                 // 3. Remove Registry entry

@@ -51,7 +51,7 @@ Section "MainSection" SEC01
     WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "DisplayName" "الهنجر — The Hangar"
     WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "UninstallString" '"$INSTDIR\Uninstall.exe"'
     WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "DisplayIcon" '"$INSTDIR\TheHangar.ico"'
-    WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "DisplayVersion" "1.0.0"
+    WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "DisplayVersion" "1.1.0"
     WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar" "Publisher" "Morad (AMOX)"
 SectionEnd
 
