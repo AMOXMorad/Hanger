@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/AMOXMorad/Hanger/releases/latest"><img src="https://img.shields.io/badge/Release-v1.0.0-f4b844?style=for-the-badge&logo=github&logoColor=14232a" alt="Version" /></a>
-  <a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.0.0/The_Hangar_Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Setup.exe_(1.46MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="Download for Windows" /></a>
+  <a href="https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Setup.exe_(1.46MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="Download for Windows" /></a>
   <img src="https://img.shields.io/badge/Platform-Windows_10%2F11-blue?style=for-the-badge&logo=windows" alt="Platform" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge" alt="License" /></a>
 </p>
@@ -21,7 +21,7 @@
 
 | الملف | الحجم | الدعم | الرابط المباشر |
 | :--- | :--- | :--- | :--- |
-| **`The_Hangar_Setup.exe`** | **1.46 MB** | Windows 10 & 11 (64-bit) | [**⬇️ تحميل مثبت الهنجر (Direct Download)**](https://github.com/AMOXMorad/Hanger/releases/download/v1.0.0/The_Hangar_Setup.exe) |
+| **`The_Hangar_Setup.exe`** | **1.46 MB** | Windows 10 & 11 (64-bit) | [**⬇️ تحميل مثبت الهنجر (Direct Download)**](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) |
 
 > [!TIP]
 > **التثبيت بضغطة زر واحدة:** لا يحتاج البرنامج أي صلاحيات مسؤول (Administrator)، ويثبت تلقائياً مع إنشاء اختصارات سطح المكتب وقائمة ابدأ وبرنامج إلغاء التثبيت النظيف.
