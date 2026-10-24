@@ -12,7 +12,7 @@
   <a href="https://github.com/AMOXMorad/Hanger/releases/latest"><img src="https://img.shields.io/badge/Release-v1.0.0-f4b844?style=for-the-badge&logo=github&logoColor=14232a" alt="Version" /></a>
   <a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.0.0/The_Hangar_Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Setup.exe_(1.46MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="Download for Windows" /></a>
   <img src="https://img.shields.io/badge/Platform-Windows_10%2F11-blue?style=for-the-badge&logo=windows" alt="Platform" />
-  <img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License" />
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge" alt="License" /></a>
 </p>
 
 ---
@@ -69,10 +69,10 @@
 ## 👤 المطور والإلهام (Credits)
 
 * **تطوير وتصميم:** [مراد · Morad](https://github.com/AMOXMorad) (`@AMOXMorad`)
-* **الإلهام البصري:** مقتبس من مشروع *The Pickles Fridge* للأخ المبدع [عمار محمدي](https://www.instagram.com/ammar1080p/) (`@ammar1080p`).
+* **الإلهام:** مقتبس من مشروع *The Pickles Fridge* للأخ المبدع [عمار محمدي](https://www.instagram.com/ammar1080p/) (`@ammar1080p`).
 
 ---
 
 <p align="center">
-  <sub>صُنع بكل ❤️ لدعم المطورين وصناع المحتوى العرب · مرخص تحت رخصة MIT</sub>
+  <sub>صُنع بكل ❤️ لدعم المطورين وصناع المحتوى العرب · مرخص تحت رخصة Apache 2.0</sub>
 </p>
