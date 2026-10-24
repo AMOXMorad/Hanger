@@ -3,14 +3,14 @@
 # 🧰 الهنجر — The Hangar
 ### ورشتك الرقمية، من الفكرة للإنجاز
 
-[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.3-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/v1.1.3)
-[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.6MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe)
-[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe)
+[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.4-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/v1.1.4)
+[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.6MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.4/The_Hangar_Setup.exe)
+[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.4/The_Hangar_Setup.exe)
 [![الترخيص](https://img.shields.io/badge/License-Apache--2.0-475569?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
 
 <br/>
 
-<a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe">
+<a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.1.4/The_Hangar_Setup.exe">
   <img src="https://img.shields.io/badge/⚡_اضغط_هنا_لتحميل_الهنجر_مباشرة-The__Hangar__Setup.exe_(1.6MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="تحميل الهنجر لويندوز" height="42" />
 </a>
 
@@ -29,13 +29,28 @@
 
 | الملف والنسخة | الرابط المباشر | الحجم | نظام التشغيل |
 | :--- | :--- | :--- | :--- |
-| **The Hangar Setup (v1.1.3)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe) | `~1.6 MB` | Windows 10 / 11 (64-bit) |
+| **The Hangar Setup (v1.1.4)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.4/The_Hangar_Setup.exe) | `~1.6 MB` | Windows 10 / 11 (64-bit) |
 
-> 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
+> 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصار نظيف وموحد باللغة الإنجليزية على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باسم `The Hangar` مع إزالة أي اختصارات عربية سابقة لمنع التكرار، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
 ---
 
-## 🚀 الجديد في الإصدار 1.1.3 (What's New in v1.1.3)
+## 🚀 الجديد في الإصدار 1.1.4 (What's New in v1.1.4)
+
+1. 🖥️ **توحيد اختصارات سطح المكتب وقائمة ابدأ بالإنجليزية فقط:**
+   - اعتماد اختصار وحيد على الديسكتوب وقائمة ابدأ باللغة الإنجليزية: `The Hangar.lnk`.
+   - تنظيف وحذف تلقائي لأي اختصارات أو مجلدات مكررة قديمة باللغة العربية (`الهنجر.lnk`).
+
+2. 🎨 **كانفا أداة شاملة خارقة (Canva is now an Omni GOAT App):**
+   - ترقية **Canva** في مسار الصور والتصميم لتنضم لنخبة الأدوات الشاملة `Omni Apps`.
+   - إحاطة بطاقة Canva بإطار الرينبو المتوهج والمتحرك (`Animated Rainbow Aura`) والتاج الملكي `🐐 OMNI`.
+
+3. 💎 **الأيقونات الرسمية الأصلية لبرامج ArtCraft:**
+   - استبدال أيقونات الويب العامة لبرامج **ArtCraft** الـ 14 بالأيقونات الأصلية المعتمدة رسمياً بصيغة WebP عالية الدقة و Vector SVG مدمجة محلياً داخل التطبيق.
+
+---
+
+## 🌟 إضافات الإصدار 1.1.3 السابقة:
 
 1. 🐐 **تصنيف وفلترة البرامج الشاملة (Omni Apps & GOAT):**
    - زر وفلتر خاص في قائمة الأدوات للوصول الفوري للبرامج الشاملة (`Omni Apps`) التي تنجز عدة مهام معقدة في وقت واحد.
