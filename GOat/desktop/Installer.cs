@@ -22,7 +22,7 @@ namespace TheHangar
                 string arg = args[0].ToUpperInvariant();
                 if (arg == "/UPDATE" || arg == "/SILENT")
                 {
-                    PerformSilentUpdate();
+                    PerformSilentUpdate(args);
                     return;
                 }
             }
@@ -32,22 +32,46 @@ namespace TheHangar
             Application.Run(new SetupForm());
         }
 
-        private static void PerformSilentUpdate()
+        private static void PerformSilentUpdate(string[] args)
         {
             try
             {
                 // Kill running instances of The Hangar to release file locks
-                System.Threading.Thread.Sleep(500);
+                System.Threading.Thread.Sleep(800);
                 foreach (Process p in Process.GetProcessesByName("The Hangar"))
                 {
                     try { p.Kill(); p.WaitForExit(3000); } catch { }
                 }
 
-                string targetDir = Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "Programs",
-                    "The Hangar"
-                );
+                string targetDir = null;
+                if (args != null && args.Length > 1 && !string.IsNullOrEmpty(args[1]))
+                {
+                    targetDir = args[1].Trim('\"');
+                }
+
+                if (string.IsNullOrEmpty(targetDir) || !Directory.Exists(targetDir))
+                {
+                    try
+                    {
+                        using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar"))
+                        {
+                            if (key != null)
+                            {
+                                targetDir = key.GetValue("InstallLocation") as string;
+                            }
+                        }
+                    }
+                    catch { }
+                }
+
+                if (string.IsNullOrEmpty(targetDir))
+                {
+                    targetDir = Path.Combine(
+                        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                        "Programs",
+                        "The Hangar"
+                    );
+                }
                 Directory.CreateDirectory(targetDir);
 
                 Assembly asm = Assembly.GetExecutingAssembly();
@@ -75,10 +99,46 @@ namespace TheHangar
                     }
                 }
 
-                // Relaunch the new updated version
+                // Update Registry DisplayVersion to 1.1.1
+                try
+                {
+                    using (RegistryKey appKey = Registry.CurrentUser.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall\TheHangar"))
+                    {
+                        if (appKey != null)
+                        {
+                            appKey.SetValue("DisplayName", "الهنجر — The Hangar");
+                            appKey.SetValue("DisplayVersion", "1.1.1");
+                            string iconP = Path.Combine(targetDir, "TheHangar.ico");
+                            if (File.Exists(iconP)) appKey.SetValue("DisplayIcon", iconP);
+                            appKey.SetValue("InstallLocation", targetDir);
+                        }
+                    }
+                }
+                catch { }
+
+                // Ensure shortcuts
                 string exePath = Path.Combine(targetDir, "The Hangar.exe");
+                string icoPath = Path.Combine(targetDir, "TheHangar.ico");
+
                 if (File.Exists(exePath))
                 {
+                    try
+                    {
+                        string desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                        SetupForm.CreateNativeShortcut(Path.Combine(desktop, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"), exePath, targetDir, icoPath, "الهنجر — ورشتك الرقمية");
+                        SetupForm.CreateNativeShortcut(Path.Combine(desktop, "The Hangar.lnk"), exePath, targetDir, icoPath, "The Hangar — Your Digital Workshop");
+
+                        string programs = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+                        if (string.IsNullOrEmpty(programs))
+                        {
+                            programs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Start Menu\Programs");
+                        }
+                        SetupForm.CreateNativeShortcut(Path.Combine(programs, "\u0627\u0644\u0647\u0646\u062c\u0631.lnk"), exePath, targetDir, icoPath, "الهنجر — ورشتك الرقمية");
+                        SetupForm.CreateNativeShortcut(Path.Combine(programs, "The Hangar.lnk"), exePath, targetDir, icoPath, "The Hangar — Your Digital Workshop");
+                    }
+                    catch { }
+
+                    // Relaunch the new updated version
                     Process.Start(new ProcessStartInfo
                     {
                         FileName = exePath,
@@ -465,7 +525,7 @@ namespace TheHangar
             Close();
         }
 
-        private static void CreateNativeShortcut(string shortcutPath, string targetPath, string workingDir, string iconPath, string description)
+        public static void CreateNativeShortcut(string shortcutPath, string targetPath, string workingDir, string iconPath, string description)
         {
             try
             {
@@ -507,7 +567,7 @@ namespace TheHangar
                     {
                         if (appKey == null) return;
                         appKey.SetValue("DisplayName", "الهنجر — The Hangar");
-                        appKey.SetValue("DisplayVersion", "1.1.0");
+                        appKey.SetValue("DisplayVersion", "1.1.1");
                         appKey.SetValue("Publisher", "Morad (AMOX)");
                         appKey.SetValue("DisplayIcon", icoPath);
                         appKey.SetValue("InstallLocation", installDir);
