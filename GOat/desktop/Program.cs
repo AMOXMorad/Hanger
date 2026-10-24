@@ -16,7 +16,7 @@ namespace TheHangar
         private const string AppMutexName = "Global\\TheHangar_AMOX_Instance_Mutex";
         private const string VirtualHostName = "hangar.local";
         public const string AppVersion = "1.0.0";
-        public const string UpdateCheckUrl = "https://raw.githubusercontent.com/AMOXMorad/Hangger/main/version.json";
+        public const string UpdateCheckUrl = "https://raw.githubusercontent.com/AMOXMorad/Hanger/main/version.json";
 
         [DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
