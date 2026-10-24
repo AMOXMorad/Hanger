@@ -3,21 +3,21 @@
 # 🧰 الهنجر — The Hangar
 ### ورشتك الرقمية، من الفكرة للإنجاز
 
-[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.2-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/v1.1.2)
-[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.6MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe)
-[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe)
+[![الإصدار الرسمي](https://img.shields.io/badge/Release-v1.1.3-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/tag/v1.1.3)
+[![تحميل لويندوز](https://img.shields.io/badge/Download-The__Hangar__Setup.exe_(1.6MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe)
+[![التوافق](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0284c7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe)
 [![الترخيص](https://img.shields.io/badge/License-Apache--2.0-475569?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
 
 <br/>
 
-<a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe">
+<a href="https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe">
   <img src="https://img.shields.io/badge/⚡_اضغط_هنا_لتحميل_الهنجر_مباشرة-The__Hangar__Setup.exe_(1.6MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="تحميل الهنجر لويندوز" height="42" />
 </a>
 
 <br/><br/>
 
 > **ورشتك الرقمية، من الفكرة للإنجاز.**  
-> المنصة والمجمّع الأضخم لأدوات المطورين، المصممين، الباحثين، وصناع المحتوى: أكثر من 68 أداة وبرنامج مكتبي مقسمة على 5 مسارات تخصصية، مع حزمة برامج ArtCraft الـ 13 المبنية بلغة Rust، ومسار متكامل للأدوات المكتبية والدراسية، ومثبت ويندوز فائق الخفة (~1.5MB) ونظام مسارات عمل تفاعلية ديناميكية.
+> المنصة والمجمّع الأضخم لأدوات المطورين، المصممين، الباحثين، وصناع المحتوى: أكثر من 70 أداة وبرنامج مكتبي مقسمة على 5 مسارات تخصصية، مع حزمة برامج ArtCraft الـ 13 المبنية بلغة Rust، ومسار متكامل للأدوات المكتبية والدراسية، ومثبت ويندوز فائق الخفة (~1.6MB) ونظام مسارات عمل تفاعلية ديناميكية.
 
 </div>
 
@@ -29,13 +29,34 @@
 
 | الملف والنسخة | الرابط المباشر | الحجم | نظام التشغيل |
 | :--- | :--- | :--- | :--- |
-| **The Hangar Setup (v1.1.2)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.2/The_Hangar_Setup.exe) | `~1.6 MB` | Windows 10 / 11 (64-bit) |
+| **The Hangar Setup (v1.1.3)** | [![تحميل مباشر](https://img.shields.io/badge/🚀_تحميل_البرنامج_الآن-The__Hangar__Setup.exe-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/v1.1.3/The_Hangar_Setup.exe) | `~1.6 MB` | Windows 10 / 11 (64-bit) |
 
 > 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
 ---
 
-## 🚀 الجديد في الإصدار 1.1.2 (What's New in v1.1.2)
+## 🚀 الجديد في الإصدار 1.1.3 (What's New in v1.1.3)
+
+1. 🐐 **تصنيف وفلترة البرامج الشاملة (Omni Apps & GOAT):**
+   - زر وفلتر خاص في قائمة الأدوات للوصول الفوري للبرامج الشاملة (`Omni Apps`) التي تنجز عدة مهام معقدة في وقت واحد.
+   - وسم وتاج ملكي مميز `🐐 GOAT · OMNI` على الأدوات الخارقة عبر جميع المسارات.
+
+2. 🌈 **إطار رينبو متوهج ومتحرك (Animated Rainbow Aura & Border):**
+   - تصميم إطار انسيابي متحرك متدرج بألوان الطيف المتوهجة (`Rainbow Border`) يحيط بكروت برامج الـ Omni Apps لتمييزها بصرياً بمظهر جذاب وفخم.
+
+3. 🧠 **أقوى وكلاء الذكاء الاصطناعي (Claude & Antigravity):**
+   - تصدر **Claude (Anthropic)** كأفضل AI Agent في التفكير والبرمجة عالمياً.
+   - إضافة **Antigravity / Gemini** كمنظومة ووكيل متعدد الوسائط فائق السرعة في مسار الويب والتطوير.
+
+4. 🎙️ **انضمام نوتبوك إل إم (NotebookLM - Google):**
+   - إضافة عملاق جوجل للأدوات المكتبية والدراسية لتلخيص ملفات الـ PDF، الأبحاث، وتوليد مراجعات صوتية وحوارية ذكية (Audio Overview).
+
+5. 🧼 **تنظيف واجهة المستخدم وتجربة الاستخدام:**
+   - إزالة العناصر المكررة من شريط التنقل العلوي لتقليل التشتت البصري والتركيز على الأدوات ومسارات العمل السريعة.
+
+---
+
+## 🌟 إضافات الإصدار 1.1.2 السابقة:
 
 1. 🎨 **نافذة تحديث ملكية خاصة بهوية الهنجر (Custom Branded Update Modal):**
    - استبدال رسائل ويندوز الافتراضية بنافذة داكنة وذهبية أنيقة مصممة خصيصاً مع ظل حقيقي (`CS_DROPSHADOW`).
