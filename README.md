@@ -1,75 +1,209 @@
-# 🧰 الهنجر — The Hangar
+# 🧰 الهنجر — The Hangar (Digital Workshop)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AMOXMorad/Hanger/dev/GOat/public/site-logo.png" width="100" height="100" alt="The Hangar Logo" />
-  <br />
-  <strong>ورشـتـك الـرقـمـيـة، مـن الـفـكـرة لـلإنجـاز</strong>
-  <br />
-  <em>Your Digital Workshop · Curated Developer & Creator Ecosystem</em>
-</p>
+[![GitHub Release](https://img.shields.io/badge/Release-v1.1.0-emerald-400?style=for-the-badge&logo=github)](https://github.com/AMOXMorad/Hanger/releases/tag/Dev-Editor-Tools)
+[![Download for Windows](https://img.shields.io/badge/Download-The_Hangar_Setup.exe_(1.5MB)-f4b844?style=for-the-badge&logo=windows&logoColor=14232a)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue?style=for-the-badge&logo=windows)](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge)](./LICENSE)
 
-<p align="center">
-  <a href="https://github.com/AMOXMorad/Hanger/releases/latest"><img src="https://img.shields.io/badge/Release-v1.0.0-f4b844?style=for-the-badge&logo=github&logoColor=14232a" alt="Version" /></a>
-  <a href="https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Setup.exe_(1.46MB)-14232a?style=for-the-badge&logo=windows&logoColor=f4b844" alt="Download for Windows" /></a>
-  <img src="https://img.shields.io/badge/Platform-Windows_10%2F11-blue?style=for-the-badge&logo=windows" alt="Platform" />
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge" alt="License" /></a>
-</p>
+> **ورشتك الرقمية، من الفكرة للإنجاز.**  
+> دليل ومجمع أدوات المطورين وصناع المحتوى: أدوات الويب، التصميم والموكابس، الذكاء الاصطناعي، والمونتاج والصوتيات مع مثبت ويندوز فائق الخفة، وتفريعات تصنيفية ذكية، ونظام مسارات عمل ديناميكية قابلة للتخصيص والتثبيت.
 
 ---
 
-## 📥 تحميل البرنامج لويندوز (Download for Windows)
+## 📥 التحميل المباشر للويندوز (Direct Download)
 
-| الملف | الحجم | الدعم | الرابط المباشر |
+يمكنك تحميل برنامج الهنجر وتثبيته على جهاز الكمبيوتر بضغطة زر واحدة:
+
+| الملف | رابط التحميل المباشر | الحجم | التوافق |
 | :--- | :--- | :--- | :--- |
-| **`The_Hangar_Setup.exe`** | **1.46 MB** | Windows 10 & 11 (64-bit) | [**⬇️ تحميل مثبت الهنجر (Direct Download)**](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe) |
+| **مثبت الهنجر الرسمي (v1.1.0)** | 🚀 **[تحميل The_Hangar_Setup.exe](https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe)** | ~1.5 MB | Windows 10 / 11 (64-bit) |
 
-> [!TIP]
-> **التثبيت بضغطة زر واحدة:** لا يحتاج البرنامج أي صلاحيات مسؤول (Administrator)، ويثبت تلقائياً مع إنشاء اختصارات سطح المكتب وقائمة ابدأ وبرنامج إلغاء التثبيت النظيف.
-
----
-
-## 🌟 نبذة عن الهنجر (About The Hangar)
-
-**الهنجر** هو منصة وتطبيق مكتبي يجمع أكثر من **43 أداة وموقع وبرنامج احترافي** يحتاجها أي مطور، مصمم، أو صانع محتوى في ورشة عمل رقمية واحدة سريعة ومصنفة بدقة:
-
-### 🗂️ المسارات الأربعة (Tracks):
-1. 🌐 **مسار الويب والتطوير:** Aceternity UI, shadcn/ui, Uiverse, v0.dev, Cursor AI, VS Code, Bolt.new, Tailwind UI Pro...
-2. 🎨 **مسار الصور والتصميم والموكابس:** Shots.so, CleanPNG, Mockup World, Clipdrop, Upscayl (8X AI Image Upscaling), Midjourney, FLUX.1...
-3. 🎬 **مسار الفيديو والمونتاج:** CapCut, Kling AI, Runway Gen-3, DaVinci Resolve, Pexels Video, Submagic, Luma Dream Machine...
-4. 🎙️ **مسار الصوت والمؤثرات:** ElevenLabs, Adobe Podcast, Audacity, Freesound, Suno AI, Pixabay Music, Epidemic Sound...
+> 💡 **ملاحظة:** المثبت يقوم تلقائياً بإنشاء اختصارات البرنامج على سطح المكتب (Desktop) وقائمة ابدأ (Start Menu) باللغتين العربية والإنجليزية، ويدعم التحديث الصامت والتلقائي عبر السحابة عند صدور أي إصدار جديد.
 
 ---
 
-## 💰 تصنيف التكلفة الثلاثي (Pricing Tiers)
+## 🚀 الجديد في الإصدار 1.1.0 (What's New in v1.1.0)
 
-* 🟢 **عِدة ببلاش (Full Free):** أدوات مجانية ومفتوحة المصدر 100% بدون أي قيود.
-* 🟡 **جربها ببلاش (Free Trial):** أدوات تقدم رصيداً أو تجربة مجانية سخية.
-* 🟣 **عِدة متكلفة (Pro):** اشتراكات ومنصات متقدمة للإنتاج التجاري الضخم.
-
----
-
-## 🗺️ مسارات العمل الجاهزة (Guided Roadmaps)
-
-أربعة مسارات عملية تأخذك خطوة بخطوة من الصفر حتى الناتج النهائي:
-* 🌐 **عايز أعمل موقع:** من الفكرة مع `v0.dev` ← المكونات مع `shadcn/ui` ← الأنيميشن مع `Aceternity UI` ← النشر على `Vercel`.
-* 🛍️ **عايز صورة منتج تجاري:** تنظيف الصورة بـ `Clipdrop` ← موكاب احترافي بـ `Shots.so` ← مضاعفة الجودة بـ `Upscayl` ← توليد أفكار بـ `FLUX.1`.
-* 🎬 **عايز أعمل فيديو:** خامات من `Pexels` ← مونتاج سريع بـ `CapCut` ← لقطات AI بـ `Kling AI` ← إخراج بـ `Runway`.
-* 🎙️ **عايز أعمل بودكاست:** تسجيل بـ `Audacity` ← تنقية بـ `Adobe Podcast` ← مؤثرات بـ `Freesound` ← دبلجة بـ `ElevenLabs`.
-
----
-
-## ⚡ مميزات التطبيق المكتبي (Desktop Highlights)
-
-- 🚀 **خفيف وسريع جداً:** مبني باستخدام محرك Microsoft Edge WebView2 الأصلي باستهلاك ذاكرة ضئيل (~40MB RAM).
-- 🔄 **تحديثات تلقائية ذكية (Smart Auto-Update):** يفحص البرنامج التحديثات في الخلفية عبر [`version.json`](./version.json) بدون إزعاج، ويقوم بالاستبدال الصامت وإعادة التشغيل خلال ثانيتين فقط عند توفر إصدار جديد.
-- 🌐 **تصفح خارجي آمن:** فتح الروابط الخارجية تلقائياً في متصفحك الافتراضي (Chrome / Edge / Firefox) لتبقى واجهة الهنجر نظيفة ومستقرة.
+1. 📌 **تثبيت وتخصيص أدوات المسار (Dynamic Step Pinning):**
+   * إمكانية تخصيص أي خطوة في مسارات العمل السريعة وتثبيت أداتك المفضلة (مثلاً استبدال `v0.dev` بـ `Bolt.new` أو `Cursor AI` في الخطوة الأولى).
+   * إمكانية تثبيت أي أداة مباشرة من "جدار العِدد" في أي مسار تريده.
+   * نافذة تفاعلية سهلة لاختيار وتثبيت أو استعادة الأداة الافتراضية للخطوة بضغطة زر.
+   * حفظ التفضيلات تلقائياً في الذاكرة المحلية (`localStorage`) لتبقى محفوظة عند إعادة فتح البرنامج.
+2. 🗂️ **تفريعات التصنيفات الذكية (Sub-Categories Taxonomy):**
+   * شريط فرعي ذكي داخل كل مسار لعرض الأدوات حسب النوع الدقيق مع عدّاد فوري لكل تصنيف فرعي:
+     - **مسار الويب:** `Blocks` (مكونات وبلوكات)، `Templates` (قوالب جاهزة)، `AI Builders` (برمجة وتطوير ذكي)، `Elements & 3D` (عناصر وخلفيات و3D).
+     - **مسار الصور:** `Mockup` (موكابس وإطارات أجهزة)، `Elements` (عناصر وتفريغ PNG)، `AI Gen` (توليد ذكي)، `Studio & Edit` (استوديو وتكبير جودة 8K).
+     - **مسار الفيديو:** `Stock & B-Roll` (خامات 4K مجانية)، `AI Video` (توليد سينمائي)، `Editing & VFX` (مونتاج وكابشنز)، `Templates` (قوالب موشن جاهزة).
+     - **مسار الصوت:** `Voice AI` (أصوات بشرية وتوليد)، `Music` (موسيقى تصويرية)، `SFX` (مؤثرات صوتية حرة)، `Enhancement` (تنقية وهندسة صوت AI).
+3. 🖥️ **دعم الاختصارات الأصلية في ويندوز (Native IShellLinkW):**
+   * حل مشكلة ترميز الحروف العربية في ويندوز؛ المثبت ينشئ الآن اختصارات رسمية متوافقة مع Unicode باسم **"الهنجر"** و **"The Hangar"** على الديسك توب وفي قائمة Start مع أيقونة الورشة الذهبية الأصلية ومجلد خاص به برنامج إلغاء التثبيت النظيف (`Uninstall.exe`).
+4. 🔒 **تحديث بروتوكول التحديث التلقائي:**
+   * تفعيل تشفير `TLS 1.2` رسمياً لضمان اتصال آمن وسلس مع خوادم GitHub للتحقق من التحديثات وتنزيلها تلقائياً.
 
 ---
 
-## 👤 المطور والإلهام (Credits)
+## 🗂️ دليل شجرة التصنيفات والتفريعات (Taxonomy & Tools)
 
-* **تطوير وتصميم:** [مراد · Morad](https://github.com/AMOXMorad) (`@AMOXMorad`)
-* **الإلهام:** مقتبس من مشروع *The Pickles Fridge* للأخ المبدع [عمار محمدي](https://www.instagram.com/ammar1080p/) (`@ammar1080p`).
+| المسار الأساسي | التفريع الفرعي | الغرض الأساسي | أبرز الأدوات المتضمنة |
+| :--- | :--- | :--- | :--- |
+| 🌐 **الويب والتطوير** | `Blocks` | مكونات UI جاهزة للنسخ واللصق | **shadcn/ui**, **Aceternity UI**, **Uiverse**, **Shadcnblocks** |
+| | `Templates` | قوالب مواقع وصفحات هبوط كاملة | **Tailwind UI**, **Next.js Templates** |
+| | `AI Builders` | كتابة كود وتطوير كامل بالذكاء الاصطناعي | **v0.dev**, **Bolt.new**, **Cursor AI** |
+| | `Elements & 3D` | عناصر تصميم، مشاعد ثلاثية الأبعاد وخلفيات | **Spline 3D**, **Haikei SVG**, **Hero Patterns** |
+| 🎨 **الصور والتصميم** | `Mockup` | موكابس حية لإطارات الهواتف والشاشات | **Shots.so**, **Mockup World** |
+| | `Elements` | أيقونات، فيكتور ورسومات مفرغة بدون خلفية | **SVG Repo**, **CleanPNG**, **Photoroom** |
+| | `AI Gen` | توليد صور فوتوغرافية وفنية واقعية | **Midjourney**, **FLUX.1** |
+| | `Studio & Edit` | مضاعفة دقة الصور وإزالة الخلفيات والفيكتور | **Upscayl (8X AI)**, **Clipdrop**, **Vectorizer.ai** |
+| 🎬 **الفيديو والمونتاج** | `Stock & B-Roll` | لقطات وخامات وفيديوهات مجانية عالية الدقة | **Pexels Video**, **Mixkit** |
+| | `AI Video` | توليد وتحريك فيديوهات بالذكاء الاصطناعي | **Kling AI**, **Runway Gen-3**, **Luma Dream Machine** |
+| | `Editing & VFX` | برامج مونتاج سريعة وتوليد كابشنز وترجمة | **CapCut**, **DaVinci Resolve**, **Submagic** |
+| | `Templates` | قوالب جاهزة ومؤثرات سينمائية | **Envato Elements**, **Motion Array** |
+| 🎙️ **الصوت والمؤثرات** | `Voice AI` | استنساخ أصوات وتوليد نصوص بصوت طبيعي | **ElevenLabs**, **Fish Audio** |
+| | `Music` | توليد مقاطع موسيقية وخلفيات صوتية | **Suno AI**, **Pixabay Music** |
+| | `SFX` | مكتبات مؤثرات صوتية احترافية بدون حقوق | **Freesound**, **ZapSplat** |
+| | `Enhancement` | تنقية التسجيلات وإزالة الضوضاء بالذكاء الاصطناعي | **Adobe Podcast AI**, **Audacity** |
+
+---
+
+## 🗺️ مسارات العمل السريعة (Roadmaps & Dynamic Pinning)
+
+بدل التشتت بين عشرات المواقع، يقدم الهنجر 4 مسارات إرشادية مباشرة تأخذك خطوة بخطوة من الصفر حتى الناتج النهائي، مع إمكانية **تثبيت أي أداة بديلة** على أي خطوة:
+
+### 1. 🌐 مسار "عايز أعمل موقع":
+* **الخطوة 01:** الهيكل والتوليد السريع بـ `v0.dev` *(يمكن استبدالها وتثبيت `Bolt.new` أو `Cursor AI`)*.
+* **الخطوة 02:** المكونات والتنسيق بـ `shadcn/ui`.
+* **الخطوة 03:** الإبهار البصري والحركات بـ `Aceternity UI`.
+* **الخطوة 04:** النشر والاستضافة السريعة على `Vercel`.
+
+### 2. 🛍️ مسار "عايز صورة منتج تجاري":
+* **الخطوة 01:** تنظيف الصورة وعزل الخلفية بـ `Clipdrop`.
+* **الخطوة 02:** موكاب احترافي وعصري بـ `Shots.so`.
+* **الخطوة 03:** مضاعفة الجودة 8X وتوضيح التفاصيل بـ `Upscayl`.
+* **الخطوة 04:** توليد زوايا وأفكار مبتكرة بـ `FLUX.1`.
+
+### 3. 🎬 مسار "عايز أعمل فيديو":
+* **الخطوة 01:** خامات B-Roll مجانية بدقة 4K من `Pexels Video`.
+* **الخطوة 02:** تجميع ومونتاج وكابشنز سريعة بـ `CapCut`.
+* **الخطوة 03:** لقطات ومشاهد حصرية بالذكاء الاصطناعي عبر `Kling AI`.
+* **الخطوة 04:** إخراج نهائي ومؤثرات سينمائية عبر `Runway`.
+
+### 4. 🎙️ مسار "عايز أعمل بودكاست":
+* **الخطوة 01:** تسجيل وتقطيع الصوت بـ `Audacity`.
+* **الخطوة 02:** تنقية وعزل الصدى بجودة الاستوديو عبر `Adobe Podcast`.
+* **الخطوة 03:** فواصل ومؤثرات صوتية واقعية من `Freesound`.
+* **الخطوة 04:** دبلجة وتعليق صوتي فائق الواقعية عبر `ElevenLabs`.
+
+---
+
+## ⚖️ مقارنة: التطبيق المكتبي مقابل نسخة الويب
+
+| الميزة | 💻 تطبيق ويندوز المكتبي (Desktop) | 🌐 نسخة الويب (Web Browser) |
+| :--- | :---: | :---: |
+| **سرعة الوصول** | تشغيل مباشر من أيقونة الديسك توب وقائمة ابدأ | يحتاج فتح المتصفح والدخول للرابط |
+| **استهلاك الموارد** | فائق الخفة (~40MB RAM) بمحرك WebView2 الأصلي | يستهلك موارد إضافية حسب تبويبات المتصفح |
+| **التحديث التلقائي** | ✅ يفحص ويحدث تلقائياً بصمت دون تدخل | يتطلب إعادة تحميل الصفحة وتحديث الكاش |
+| **الروابط الخارجية** | تُفتح في متصفحك الافتراضي خارج التطبيق ليبقى الهنجر مستقراً | تُفتح داخل تبويب جديد في نفس المتصفح |
+| **حفظ التخصيص والمفضلة** | ✅ محفوظ محلياً في الذاكرة بأمان | ✅ محفوظ محلياً في ذاكرة المتصفح |
+| **حجم التنزيل** | فائق الصغر (~1.5 ميجابايت فقط) | لا يحتاج تنزيل مسبق |
+
+---
+
+## ❓ الأسئلة الشائعة واستكشاف الأخطاء (FAQ & Troubleshooting)
+
+<details>
+<summary><b>س: ظهرت لي رسالة "Windows protected your PC" (SmartScreen) عند فتح المثبت، هل هذا طبيعي؟</b></summary>
+<br>
+<b>ج: نعم، تماماً!</b> تطبيق الهنجر مجاني ومفتوح المصدر (Open Source) بالكامل، ولا نستخدم شهادات تجارية سنوية مدفوعة الثمن من مايكروسوفت. يظهر هذا الإشعار عادة مع أي ملف تنفيذي جديد لم يحقق ملايين التنزيلات بعد.
+<br><br>
+<b>طريقة المتابعة والتثبيت:</b>
+1. اضغط على خيار <b>"More info" (المزيد من المعلومات)</b> أسفل الرسالة.
+2. اضغط على زر <b>"Run anyway" (التشغيل على أي حال)</b>.
+3. سيبدأ التثبيت الفوري خلال ثوانٍ معدودة ولن تظهر الرسالة مرة أخرى.
+</details>
+
+<details>
+<summary><b>س: أين يتم حفظ الأدوات التي قمت بتثبيتها (Pinned Tools) والمفضلة؟</b></summary>
+<br>
+<b>ج:</b> تُحفظ جميع بياناتك محلياً على جهازك في الذاكرة التخزينية (Local Storage). لا نجمع أي بيانات شخصية ولا نتتبع استخدامك إطلاقاً، وتظل أدواتك محفوظة دائماً حتى عند إغلاق البرنامج وفتحه مجدداً.
+</details>
+
+<details>
+<summary><b>س: كيف يعمل نظام التحديث التلقائي الصامت؟</b></summary>
+<br>
+<b>ج:</b> يقوم البرنامج عند بدء تشغيله بفحص ملف <code>version.json</code> على المستودع الرسمي عبر اتصال مشفر (TLS 1.2). إذا وجد إصداراً أحدث، يقوم بتحميل التحديث وتثبيته تلقائياً دون إزعاج.
+</details>
+
+<details>
+<summary><b>س: كيف يمكنني استعادة المسار الافتراضي إذا قمت بتغيير أداة مثبتة؟</b></summary>
+<br>
+<b>ج:</b> في بطاقة أي خطوة في المسار، ستجد زر "استعادة الأداة الأصلية" أو يمكنك الضغط على زر "إعادة تعيين المسار كاملاً" بجانب عنوان المسار لاسترجاع التوزيعة القياسية في أي لحظة.
+</details>
+
+---
+
+## 🚀 تشغيل نسخة الويب محلياً (Web Development)
+
+إذا كنت ترغب في تشغيل أو تعديل كود واجهة الويب محلياً:
+
+```bash
+cd GOat
+pnpm install
+pnpm dev
+```
+افتح المتصفح على: `http://localhost:3000`
+
+---
+
+## 🛠️ بناء مثبت ويندوز المكتبي (Desktop Installer Build)
+
+1. تصدير ملفات الويب السكونية:
+```bash
+cd GOat
+pnpm build
+```
+
+2. نسخ ملفات `out/` إلى `desktop/ui/`.
+3. تجميع ملف المثبت عبر مترجم C# المدمج في ويندوز مع دعم Unicode و TLS 1.2:
+```cmd
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /optimize+ /out:"The_Hangar_Setup.exe" /win32icon:"TheHangar.ico" /win32manifest:"app.manifest" /res:"TheHangar_Payload.zip",Payload.zip /r:System.dll,System.Windows.Forms.dll,System.Drawing.dll,System.IO.Compression.dll,System.IO.Compression.FileSystem.dll Installer.cs
+```
+
+---
+
+## 🔄 نظام التحديث التلقائي (Auto-Update System)
+
+يتحكم ملف [`version.json`](./version.json) في إشعار المستخدمين بالتحديثات:
+```json
+{
+  "version": "1.1.0",
+  "name": "The Hangar",
+  "releaseDate": "2026-10-24",
+  "releaseNotes": "الإصدار 1.1.0 — دعم تخصيص وتثبيت الأدوات في مسارات العمل ديناميكياً (Pinning)، وتفريعات التصنيفات الذكية (Blocks, Templates, Mockup, Elements)، مع اختصارات ويندوز الأصلية وتحسينات الأمان.",
+  "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe",
+  "mandatory": false
+}
+```
+
+### لإطلاق تحديث جديد:
+1. ارفع ملف `The_Hangar_Setup.exe` الجديد في GitHub Releases تحت الرابط المباشر:
+   `https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe`
+2. عدّل رقم الإصدار في `version.json` على المستودع واعمل `git push` إلى فرع `main`.
+3. فور اتصال أي مستخدم بالإنترنت وتشغيل البرنامج، سيكتشف التحديث ويقوم بالترقية الفورية بلمسة زر واحدة!
+
+---
+
+## 🤝 المساهمة واقتراح عِدد جديدة (Contributing)
+
+الهنجر مشروع مجتمعي ومفتوح المصدر! إذا كنت تعرف أداة مجانية، موقعاً خارقاً، أو مكتبة تستحق أن تنضم إلى "جدار العِدد"، نرحب بمساهمتك:
+1. افتح [Issue جديد](https://github.com/AMOXMorad/Hanger/issues) وضع رابط الأداة وتصنيفها ونوع تسعيرها.
+2. أو أرسل Pull Request بتعديل مصفوفة الأدوات في `GOat/app/page.tsx`.
+
+---
+
+## 👤 المطور والإلهام
+
+- **تطوير وتصميم:** [مراد · Morad](https://github.com/AMOXMorad) (`@AMOXMorad`)
+- **الإلهام البصري:** مقتبس ومستلهم من الفكرة العبقرية لمشروع *The Pickles Fridge* للمبدع [عمار محمدي](https://www.instagram.com/ammar1080p/) (`@ammar1080p`).
 
 ---
 
