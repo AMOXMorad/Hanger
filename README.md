@@ -60,7 +60,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /optimize
   "name": "The Hangar",
   "releaseDate": "2026-10-24",
   "releaseNotes": "الإصدار الرسمي الأول من الهنجر مع 43 أداة وموقع وبرنامج.",
-  "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/v1.0.0/The_Hangar_Setup.exe",
+  "downloadUrl": "https://github.com/AMOXMorad/Hanger/releases/download/Dev-Editor-Tools/The_Hangar_Setup.exe",
   "mandatory": false
 }
 ```
